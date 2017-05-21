@@ -1,0 +1,101 @@
+/* common start  */
+html, body { position: relative; margin: 0px; padding: 0px; font-size: 12px; color: #333; background-color: #f9f9f9; }
+
+p { padding: 0px; margin: 0px; }
+
+a, a:hover, a:active { text-decoration: none; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.clearAll { clear: both; overflow: hidden; }
+
+.container { width: 1200px; margin: 0 auto; }
+
+ul { margin: 0px; padding: 0px; list-style: none; }
+
+/* common end */
+.topAdv { width: 100%; min-width: 1200px; clear: both; overflow: hidden; }
+
+.topAdv .topImg { width: 1200px; margin: 0 auto; clear: both; overflow: hidden; position: relative; }
+
+.topAdv .topImg img { width: 100%; }
+
+.topAdv .topImg .closeBtn { position: absolute; top: 0px; right: 0px; height: 30px; width: 30px; background-color: rgba(0, 0, 0, 0.5); color: #fff; line-height: 30px; text-align: center; font-size: 20px; }
+
+.topAdv .topImg .closeBtn:hover { background-color: black; text-decoration: none; }
+
+/*top bar */
+.topBar { height: 30px; line-height: 30px; width: 100%; clear: both; overflow: hidden; background: #f1f1f1; border-bottom: 1px solid #f3f3f3; }
+
+.topBar .toLogin { color: red; margin: 0 10px; }
+
+.topBar .na { color: #333; }
+
+.topBar .na:hover { color: #3a95e7; }
+
+.topBar .topA .na { display: inline-block; padding: 0px 7px; position: relative; }
+
+.topBar .topA .na:not(:last-child):after { content: "|"; position: absolute; color: #999; right: 0px; }
+
+/* logo and search start */
+.logo_search { height: 60px; padding: 10px 0px; margin: 0 auto; background-color: #fff; }
+
+.logo_search .mainLogo { float: left; height: 50px; margin: 5px 0px; width: 25%; }
+
+.logo_search .mainLogo img { height: 50px; float: left; }
+
+.logo_search .mainLogo .service { float: left; margin-left: 10px; color: #999; }
+
+.logo_search .mainLogo .service .text { font-size: 14px; line-height: 2; }
+
+.logo_search .mainLogo .service .number { font-size: 14px; }
+
+.logo_search .searchBox { width: 50%; float: left; }
+
+.logo_search .searchBox .searchGroup { margin: 0 auto; width: 300px; }
+
+.logo_search .buySaller { float: left; width: 25%; }
+
+/* logo and search end */
+/* menu box start */
+.menu { clear: both; background-color: #3c76df; width: 100%; color: #fff; min-width: 1200px; }
+
+.menu .menuInner { width: 1200px; }
+
+.menu .menuInner li { display: inline-block; }
+
+.menu .menuInner li.classFlag { width: 200px; position: relative; }
+
+.menu .menuInner li.classFlag .className { height: 40px; line-height: 40px; font-size: 15px; text-align: center; background-color: #2259be; }
+
+.menu .menuInner li.classFlag:hover .classBox { display: block; }
+
+.menu .menuInner li.classFlag .classBox { position: absolute; width: 200px; z-index: 10; background-color: rgba(0, 0, 0, 0.5); display: none; }
+
+.menu .menuInner li.classFlag .classBox li { clear: both; overflow: hidden; height: 40px; line-height: 40px; width: 100%; display: block; margin-bottom: 1px; }
+
+.menu .menuInner li.classFlag .classBox li .classItem { display: block; padding-left: 30px; color: #fff; position: relative; font-size: 14px; }
+
+.menu .menuInner li.classFlag .classBox li .classItem:hover, .menu .menuInner li.classFlag .classBox li .classItem.active { background-color: #fff; color: #333; }
+
+.menu .menuInner li.classFlag .classBox li .classItem:hover:after, .menu .menuInner li.classFlag .classBox li .classItem.active:after { content: ">"; position: absolute; right: 10px; }
+
+.menu .menuInner li.menuItem { position: relative; margin: 0px 1px; }
+
+.menu .menuInner li.menuItem a { display: block; color: #fff; padding: 0px 15px; line-height: 40px; height: 40px; font-size: 14px; background-color: rgba(34, 89, 190, 0); }
+
+.menu .menuInner li.menuItem a:hover { -webkit-transition: background-color 0.3s; transition: background-color 0.3s; background-color: #2259be; }
+
+.menu .menuInner li.menuItem:hover .secondMenu { display: block; }
+
+.menu .menuInner li.menuItem .secondMenu { position: absolute; display: none; }
+
+.menu .menuInner li.menuItem .secondMenu li { display: block; height: 40px; }
+
+.menu .menuInner li.menuItem .secondMenu li a { display: block; line-height: 40px; width: 80px; background-color: #3c76df; }
+
+.menu .menuInner li.menuItem .secondMenu li a:hover { background-color: #2259be; }
+
+/* menu box end */
