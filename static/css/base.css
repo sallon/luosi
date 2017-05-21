@@ -1,6 +1,8 @@
 /* common start  */
 html, body { position: relative; margin: 0px; padding: 0px; font-size: 12px; color: #333; background-color: #f9f9f9; }
 
+.iconfont { line-height: inherit; font-size: inherit; }
+
 p { padding: 0px; margin: 0px; }
 
 a, a:hover, a:active { text-decoration: none; }
@@ -54,9 +56,29 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .logo_search .searchBox { width: 50%; float: left; }
 
-.logo_search .searchBox .searchGroup { margin: 0 auto; width: 300px; }
+.logo_search .searchBox .searchGroup { margin: 0 auto; width: 500px; height: 40px; padding-top: 10px; }
 
-.logo_search .buySaller { float: left; width: 25%; }
+.logo_search .searchBox .searchGroup .searchBefore { float: left; width: 150px; line-height: 40px; text-align: center; }
+
+.logo_search .searchBox .searchGroup .searchBefore em { float: left; width: 71px; overflow: hidden; font-style: normal; line-height: 38px; border: 1px solid #eee; color: #f60; }
+
+.logo_search .searchBox .searchGroup .searchBefore i { float: left; width: 4px; }
+
+.logo_search .searchBox .searchGroup .searchInput { height: 36px; float: left; border: 2px solid #3c76df; width: 306px; }
+
+.logo_search .searchBox .searchGroup .searchInput input { width: 286px; border: 0px; outline: none; height: 36px; padding: 0px 10px; }
+
+.logo_search .searchBox .searchGroup .searchBtn { float: left; height: 40px; background-color: #3c76df; width: 40px; color: #fff; text-align: center; line-height: 40px; font-size: 18px; }
+
+.logo_search .searchBox .searchGroup .searchBtn:hover { background-color: #2259be; }
+
+.logo_search .buySaller { float: left; width: 25%; text-align: right; padding-top: 10px; }
+
+.logo_search .buySaller .car { border: 1px solid #eee; display: inline-block; height: 40px; line-height: 40px; padding: 0px 10px; font-size: 16px; color: #f60; }
+
+.logo_search .buySaller .car span { font-size: 12px; display: inline-block; background-color: #f60; color: #fff; width: 20px; height: 20px; border-radius: 100%; text-align: center; line-height: 20px; }
+
+.logo_search .buySaller .car:hover { -webkit-transition: background-color 0.5s; transition: background-color 0.5s; background-color: rgba(200, 200, 200, 0.7); }
 
 /* logo and search end */
 /* menu box start */
@@ -64,7 +86,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .menu .menuInner { width: 1200px; }
 
-.menu .menuInner li { display: inline-block; }
+.menu .menuInner li { display: inline-block; vertical-align: bottom; }
 
 .menu .menuInner li.classFlag { width: 200px; position: relative; }
 
@@ -74,7 +96,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .menu .menuInner li.classFlag .classBox { position: absolute; width: 200px; z-index: 10; background-color: rgba(0, 0, 0, 0.5); display: none; }
 
-.menu .menuInner li.classFlag .classBox li { clear: both; overflow: hidden; height: 40px; line-height: 40px; width: 100%; display: block; margin-bottom: 1px; }
+.menu .menuInner li.classFlag .classBox li { clear: both; overflow: hidden; height: 30px; line-height: 30px; width: 100%; display: block; margin-bottom: 1px; }
 
 .menu .menuInner li.classFlag .classBox li .classItem { display: block; padding-left: 30px; color: #fff; position: relative; font-size: 14px; }
 
@@ -82,7 +104,11 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .menu .menuInner li.classFlag .classBox li .classItem:hover:after, .menu .menuInner li.classFlag .classBox li .classItem.active:after { content: ">"; position: absolute; right: 10px; }
 
-.menu .menuInner li.menuItem { position: relative; margin: 0px 1px; }
+.menu .menuInner li.classFlag .classBox li .newClass { display: block; height: 30px; line-height: 30px; text-align: center; background-color: #f60; color: #fff; border-radius: 4px; width: 80%; margin: 10px auto; }
+
+.menu .menuInner li.classFlag .classBox li .newClass:hover { background-color: #f90; }
+
+.menu .menuInner li.menuItem { position: relative; }
 
 .menu .menuInner li.menuItem a { display: block; color: #fff; padding: 0px 15px; line-height: 40px; height: 40px; font-size: 14px; background-color: rgba(34, 89, 190, 0); }
 

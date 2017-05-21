@@ -8,6 +8,10 @@ html,body{
   color: #333;
   background-color: #f9f9f9;
 }
+.iconfont{
+  line-height: inherit;
+  font-size: inherit;
+}
 p{
   padding: 0px;
   margin: 0px;
@@ -135,12 +139,88 @@ ul{
     float: left;
     .searchGroup{
       margin: 0 auto;
-      width: 300px;
+      width: 500px;
+      //border: 2px solid #3a95e7;
+      height: 40px;
+      padding-top: 10px;
+      .searchBefore{
+        float: left;
+        width: 150px;
+        line-height: 40px;
+        //border-right: 1px solid #3a95e7;
+        text-align: center;
+        em{
+          float: left;
+          width: 71px;
+          overflow: hidden;
+          font-style: normal;
+          //background-color: #999;
+          line-height: 38px;
+          border: 1px solid #eee;
+          color: #f60;
+        }
+        i{
+          float: left;
+          width: 4px;
+        }
+      }
+      .searchInput{
+        height: 36px;
+        float: left;
+        border:2px solid #3c76df;
+        width: 306px;
+        input{
+          width: 286px;
+          border: 0px;
+          outline: none;
+          height: 36px;
+          padding: 0px 10px;
+        }
+      }
+      .searchBtn{
+        float: left;
+        height: 40px;
+        background-color: #3c76df;
+        width: 40px;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        &:hover{
+          background-color: rgba(34,89,190,1);
+        }
+      }
     }
   }
   .buySaller {
     float: left;
     width: 25%;
+    text-align: right;
+    padding-top: 10px;
+    .car{
+      border: 1px solid #eee;
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      padding: 0px 10px;
+      font-size: 16px;
+      color: #f60;
+      span{
+        font-size: 12px;
+        display: inline-block;
+        background-color: #f60;
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 20px;
+      }
+      &:hover{
+        transition: background-color 0.5s;
+        background-color: rgba(200,200,200,0.7);
+      }
+    }
   }
 }
 /* logo and search end */
@@ -156,6 +236,7 @@ ul{
     width: 1200px;
     li{
       display: inline-block;
+      vertical-align: bottom;
       &.classFlag{
         width: 200px;
         position: relative;
@@ -180,8 +261,8 @@ ul{
           li{
             clear: both;
             overflow: hidden;
-            height: 40px;
-            line-height: 40px;
+            height: 30px;
+            line-height:30px;
             width: 100%;
             display: block;
             margin-bottom: 1px;
@@ -201,12 +282,26 @@ ul{
                 }
               }
             }
+            .newClass{
+              display: block;
+              height: 30px;
+              line-height: 30px;
+              text-align: center;
+              background-color: #f60;
+              color: #fff;
+              border-radius: 4px;
+              width: 80%;
+              margin: 10px auto;
+              &:hover{
+                background-color: #f90;
+              }
+            }
           }
         }
       }
       &.menuItem{
         position: relative;
-        margin: 0px 1px;
+        //margin: 0px 1px;
         a{
           display: block;
           color: #fff;
