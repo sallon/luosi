@@ -257,4 +257,6 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .webmsg { text-align: center; padding: 10px 0px; font-size: 12px; color: #999; line-height: 2; }
 
+.webmsg img { height: 25px; margin: 10px; }
+
 /* footer end  */
