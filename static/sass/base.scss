@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* common start  */
-$baseColor:#3c76df;
+$baseColor:#72b1e4;
+$borderColor:#b8cad8;
 html,body{
   position: relative;
   margin: 0px;
@@ -59,13 +60,14 @@ ul{
       position: absolute;
       top:0px;
       right:0px;
-      height: 30px;
-      width: 30px;
+      height: 16px;
+      width: 16px;
       background-color: rgba(0,0,0,0.5);
       color: #fff;
-      line-height: 30px;
+      line-height: 16px;
       text-align: center;
-      font-size: 20px;
+      font-size: 12px;
+      border-radius: 3px;
       &:hover{
         background-color: rgba(0,0,0,8);
         text-decoration: none;
@@ -98,18 +100,22 @@ ul{
       display: inline-block;
       padding: 0px 7px;
       position: relative;
-      &:not(:last-child):after{
-        content: "|";
+      &:not(:last-child)::after{
+        content: "";
         position: absolute;
         color: #999;
         right: 0px;
+        height: 30px;
+        top:0px;
+        width: 1px;
+        background-color: #c8c8c8;
       }
     }
   }
 }
 /* logo and search start */
 .logo_search{
-  height: 60px;
+  height: 50px;
   padding: 10px 0px;
   margin: 0 auto;
   background-color: #fff;
@@ -119,7 +125,7 @@ ul{
     margin: 5px 0px;
     width: 25%;
     img{
-      height: 50px;
+      height: 40px;
       float: left;
     }
     .service{
@@ -128,68 +134,57 @@ ul{
       color: #999;
       .text{
         font-size: 14px;
-        line-height: 2;
+        line-height: 1.5;
       }
       .number{
         font-size: 14px;
+        line-height: 1.5;
+        color: #f60;
       }
     }
   }
   .searchBox{
     width: 50%;
     float: left;
-    .searchGroup{
-      margin: 0 auto;
-      width: 500px;
-      //border: 2px solid #3a95e7;
-      height: 40px;
-      padding-top: 10px;
-      .searchBefore{
-        float: left;
-        width: 150px;
-        line-height: 40px;
-        //border-right: 1px solid #3a95e7;
-        text-align: center;
-        em{
-          float: left;
-          width: 71px;
-          overflow: hidden;
-          font-style: normal;
-          //background-color: #999;
-          line-height: 38px;
-          border: 1px solid #eee;
-          color: #f60;
-        }
-        i{
-          float: left;
-          width: 4px;
-        }
+    text-align: center;
+    .searchCondition{
+      height: 28px;
+      line-height: 28px;
+      width: 80px;
+      border: 1px solid #f60;
+      color: #f60;
+      display: inline-block;
+      margin: 10px;
+      position: relative;
+      padding-right: 30px;
+      vertical-align: middle;
+      border-radius: 3px;
+      &::after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: block;
+        position: absolute;
+        background-image: url("../images/common/down.png");
+        background-size: 90%;
+        background-repeat: no-repeat;
+        top:10px;
+        right: 10px;
       }
-      .searchInput{
-        height: 36px;
-        float: left;
-        border:2px solid #3c76df;
-        width: 306px;
-        input{
-          width: 286px;
-          border: 0px;
-          outline: none;
-          height: 36px;
-          padding: 0px 10px;
-        }
-      }
-      .searchBtn{
-        float: left;
-        height: 40px;
-        background-color: #3c76df;
-        width: 40px;
-        color: #fff;
-        text-align: center;
-        line-height: 40px;
-        font-size: 18px;
-        &:hover{
-          background-color: rgba(34,89,190,1);
-        }
+    }
+    .searchBtn{
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      border-radius: 3px;
+      background-color: #f60;
+      display: inline-block;
+      font-size: 16px;
+      vertical-align: middle;
+      &:hover{
+        background-color: #f90;
       }
     }
   }
@@ -198,28 +193,18 @@ ul{
     width: 25%;
     text-align: right;
     padding-top: 10px;
-    .car{
-      border: 1px solid #eee;
+    .buyItem{
+      border: 1px solid #f60;
       display: inline-block;
-      height: 40px;
-      line-height: 40px;
+      height: 28px;
+      line-height: 28px;
       padding: 0px 10px;
-      font-size: 16px;
+      font-size: 14px;
       color: #f60;
-      span{
-        font-size: 12px;
-        display: inline-block;
+      margin-left: 20px;
+      &:hover{
         background-color: #f60;
         color: #fff;
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
-        text-align: center;
-        line-height: 20px;
-      }
-      &:hover{
-        transition: background-color 0.5s;
-        background-color: rgba(200,200,200,0.7);
       }
     }
   }
@@ -229,7 +214,7 @@ ul{
 .menu{
   clear: both;
   //height: 40px;
-  background-color: #3c76df;
+  background-color: #72b1e4;
   width: 100%;
   color: #fff;
   min-width: 1200px;
@@ -238,89 +223,24 @@ ul{
     li{
       display: inline-block;
       vertical-align: bottom;
-      &.classFlag{
-        width: 200px;
-        position: relative;
-        .className{
-          height: 40px;
-          line-height: 40px;
-          font-size: 15px;
-          text-align: center;
-          background-color: rgba(34,89,190,1);
-        }
-        &:hover{
-          .classBox{
-            display: block;
-          }
-        }
-        .classBox{
-          position: absolute;
-          width: 200px;
-          z-index: 20;
-          background-color: rgba(0,0,0,0.5);
-          display: none;
-          li{
-            clear: both;
-            overflow: hidden;
-            height: 30px;
-            line-height:30px;
-            width: 100%;
-            display: block;
-            margin-bottom: 1px;
-            .classItem{
-              display: block;
-              padding-left: 30px;
-              color: #fff;
-              position: relative;
-              font-size: 14px;
-              img{
-                width: 16px;
-                margin-right: 5px;
-                //width: 10px;
-                vertical-align: middle;
-              }
-              &:hover,&.active{
-                background-color: #fff;
-                color: #333;
-                &:after{
-                  content: ">";
-                  position: absolute;
-                  right: 10px;
-                }
-              }
-            }
-            .newClass{
-              display: block;
-              height: 30px;
-              line-height: 30px;
-              text-align: center;
-              background-color: #f60;
-              color: #fff;
-              border-radius: 4px;
-              width: 80%;
-              margin: 10px auto;
-              &:hover{
-                background-color: #f90;
-              }
-            }
-          }
-        }
-      }
       &.menuItem{
         position: relative;
-        //margin: 0px 1px;
         a{
           display: block;
           color: #fff;
-          padding: 0px 15px;
           line-height: 40px;
           height: 40px;
           font-size: 14px;
-          background-color: rgba(34,89,190,0);
+          background-color: rgba(35,140,225,0);
+          text-align: center;
+          width: 100px;
           &:hover{
             transition:  background-color 0.3s;
-            background-color: rgba(34,89,190,1);
+            background-color: rgba(35,140,225,1);
           }
+        }
+        &.active{
+          background-color: rgba(35,140,225,1);
         }
         &:hover{
           .secondMenu{
@@ -337,10 +257,10 @@ ul{
             a{
               display: block;
               line-height: 40px;
-              width: 80px;
-              background-color: #3c76df;
+              width: 100px;
+              background-color: #72b1e4;
               &:hover{
-                background-color: rgba(34,89,190,1);
+                background-color: rgba(35,140,225,1);
               }
             }
           }
@@ -363,26 +283,27 @@ ul{
 /* menu box end */
 /* 轮播图片和推广 start */
 .slider{
-  width: 960px;
+  width: 1200px;
   float: left;
-  height: 330px;
+  height: 200px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 10px;
   .slidesjs-navigation{
     display: none;
   }
   .slidesjs-pagination{
     position: absolute;
     bottom: 10px;
-    text-align: center;
+    text-align: right;
     width: 100%;
     .slidesjs-pagination-item{
       display: inline-block;
-      width: 10px;
-      height: 10px;
-      border-radius: 10px;
-      padding: 3px;
-      background-color: #3c76df;
+      width: 7px;
+      height: 7px;
+      border-radius: 7px;
+      padding: 2px;
+      background-color: #f60;
       margin: 0px 5px;
       line-height: 100;
       overflow: hidden;
@@ -391,86 +312,135 @@ ul{
         overflow: hidden;
         &.active{
           background-color: #fff;
-          height: 10px;
-          width: 10px;
-          border-radius: 10px;
+          height: 7px;
+          width: 7px;
+          border-radius: 7px;
         }
       }
     }
   }
 }
-.smAdv{
-  width: 220px;
-  float: left;
-  height: 330px;
-  padding-left: 20px;
-  background-color: #fff;
-  .advItem{
-    display: block;
-    width: 220px;
-    height: 100px;
-    margin-top:10px;
-    line-height: 100px;
-    text-align: center;
-    font-size: 24px;
-    color: #fff;
-    box-shadow: 0px 5px 5px rgba(200,200,200,0.4);
-  }
-}
 /* 轮播图片和推广 end */
-/* 首页推广产品列表 start */
-.goodList{
-  clear: both;
-  overflow: hidden;
-  .goodItem{
-    float: left;
-    width: 190px;
-    height: 220px;
-    overflow: hidden;
-    margin: 20px 10px 0px 0px;
-    border: 1px solid transparent;
+/* 左右结构 start */
+.leftContent{
+  width: 1000px;
+  float: left;
+  .classBox{
     background-color: #fff;
-    .goodImg{
-      width: 190px;
-      height: 190px;
-      img{
-        width: 100%;
+    clear: both;
+    overflow: hidden;
+    .firstClass{
+      float: left;
+      width: 200px;
+      .flag{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        background-color: $baseColor;
+      }
+      .classList{
+        width: 200px;
+        box-sizing: border-box;
+        .classItem{
+          display: block;
+          height: 50px;
+          line-height: 50px;
+          padding-left: 30px;
+          font-size: 16px;
+          border-bottom: 1px solid #eee;
+          color: #666;
+          position: relative;
+          img{
+            width: 30px;
+            margin-top: 10px;
+            vertical-align: top;
+            margin-right: 10px;
+          }
+          &.active::after{
+            content: ">";
+            position: absolute;
+            right: 10px;
+            line-height: 50px;
+          }
+        }
+        .newClass{
+          height: 50px;
+          line-height: 50px;
+          width: 90%;
+          margin: 10px auto;
+          color: #fff;
+          background-color: #f60;
+          text-align: center;
+          display: block;
+          border-radius: 5px;
+          &:hover{
+            background-color: #f90;
+          }
+        }
       }
     }
-    .goodName{
-      line-height: 30px;
-      font-size: 14px;
-      text-align: center;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      color: #333;
-    }
-    &:hover{
-      box-shadow: 0px 5px 5px rgba(200,200,200,0.7);
-      border-color: #3c76df;
-      .goodName{
-        color: #3c76df;
+    .secondClass{
+      width: 780px;
+      padding: 10px;
+      height: 642px;
+      border-top:1px solid $baseColor;
+      float: left;
+      .childItem{
+        width: 126px;
+        height: 133px;
+        border: 1px solid #b8cad8;
+        float: left;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        .childImg{
+          width: 126px;
+          height: 103px;
+          clear: both;
+          overflow: hidden;
+          img{
+            width: 100%;
+          }
+        }
+        .childName{
+          background-color: #b8cad8;
+          text-align: center;
+          height: 30px;
+          line-height: 30px;
+          color: #fff;
+          font-size: 14px;
+        }
+        &.active,&:hover{
+          border-color: $baseColor;
+          .childName{
+            background-color: $baseColor;
+          }
+        }
       }
     }
   }
+
 }
-/* 首页推广产品列表 end */
+/* 左右结构 end */
 /* 询价表哥 start */
+.modelBox{
+  width: 1000px;
+}
 .model{
   background-color: #fff;
   margin-top: 20px;
   &.m60{
     float: left;
-    width: 710px;
+    width: 540px;
   }
   &.m40{
     float: right;
-    width: 470px;
+    width: 450px;
   }
   .modelTop{
     height: 40px;
-    background-color: #3c76df;
+    background-color: $baseColor;
     color: #fff;
     padding: 0px 10px;
     line-height: 40px;
@@ -488,6 +458,7 @@ ul{
   }
   .modelTable{
     width: 100%;
+    border: 1px solid $borderColor;
     tr:nth-child(2n){
       background-color: #f9f9f9;
     }
@@ -495,10 +466,17 @@ ul{
       td{
         color: $baseColor;
         font-size: 14px;
-        &:last-child,&:first-child{
+        &:last-child{
           color: #333;
         }
+        &:first-child{
+          color: #f60;
+        }
       }
+    }
+    td:first-child{
+      color: #f60;
+      background-color: #f5f5f5;
     }
     tr:hover{
       background-color: #F7F7F7;
@@ -521,14 +499,16 @@ ul{
 .modelTab{
   background-color: #fff;
   margin-top: 20px;
+  border:1px solid $borderColor;
+  margin-top: 20px;
   .tabHeader{
     height: 30px;
     line-height: 30px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $baseColor;
     a{
       display: inline-block;
       padding: 0px 15px;
-      font-size: 16px;
+      font-size: 14px;
       color: #333;
       &:hover,&.active{
         background-color: $baseColor;
@@ -548,14 +528,14 @@ ul{
   margin-top: 20px;
   background-color: #fff;
   .slideName{
-    height: 212px;
+    height: 216px;
     width: 50px;
     float: left;
     background-color: $baseColor;
     word-wrap: break-word;
     font-size: 20px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 24px;
     span{
       display: block;
       text-align: center;
@@ -565,17 +545,25 @@ ul{
   }
   .slideAdv{
     float: left;
-    width: 1150px;
-    height: 232px;
+    width: 1138px;
+    height: 218px;
+    border: 1px solid $baseColor;
     overflow: hidden;
     background-color: #fff;
+    padding: 10px;
+    padding-left: 0px;
     .item{
       float: left;
       border: 1px solid transparent;
-      width: 230px;
+      width: 218px;
+      position: relative;
+      height: 218px;
       .img{
-        width: 230px;
-        height: 200px;
+        width: 218px;
+        height: 218px;
+        img{
+          width: 100%;
+        }
       }
       .itemName{
         text-align: center;
@@ -585,60 +573,118 @@ ul{
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
+        position: absolute;
+        bottom:0px;
+        height: 30px;
+        color: #fff;
+        background-color: rgba(0,0,0,0.5);
+        width:218px;
       }
       &:hover{
-        color: $baseColor;
-        border-color: $baseColor;
+        .itemName{
+          width: 218px;
+          height: 218px;
+          top:0px;
+          left: 0px;
+          font-size: 16px;
+          line-height: 218px;
+        }
       }
     }
   }
 }
 /* 轮播产品广告 end */
-/*footer start */
-.footer{
-  background-color: #eee;
-  background-image: url("../images/common/footer.jpg");
-  margin-top: 30px;
-  .footerList{
-    clear: both;
-    overflow: hidden;
-    width: 100%;
-    background-image: url("../images/common/footer.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    height: 180px;
-    li{
-      display: inline-block;
-      text-align: left;
-      vertical-align: top;
-      padding: 20px 0px;
-      width: 33%;
-      .footerTitle{
-        font-size: 20px;
-        color: #fff;
+/* 入驻商家 start */
+.sellers{
+  float: right;
+  width: 180px;
+  background-color: #fff;
+  .flag{
+    height: 40px;
+    background-color: $baseColor;
+    color: #fff;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  .sellerList{
+    height: 925px;
+    .sellerItem{
+      width: 160px;
+      margin:4px 10px;
+      border: 1px solid #eee;
+      .name{
+        font-size: 14px;
         line-height: 2;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0px 10px;
+        color: #666;
+      }
+      .tel{
+        text-align: center;
+        font-size: 12px;
+        line-height: 2;
+        color: #999;
+      }
+      .other{
+        padding: 0px 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        span{
+          display: inline-block;
+          color: #999;
+          &.count{
+            font-size: 12px;
+            em{
+              font-style: normal;
+              color: #f60;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* 入驻商家 end */
+/* footer start  */
+.footer{
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  margin-top: 20px;
+  padding: 20px 0px;
+  .footerList{
+    width: 100%;
+    li{
+      float: left;
+      width: 33.33%;
+      height: 120px;
+      .footerTitle{
+        font-size: 18px;
+        margin-top: 20px;
+        color: #888;
       }
       a{
-        display: block;
-        color: #fff;
+        display: inline-block;
+        font-size: 14px;
+        color: #999;
         line-height: 2;
+        margin: 0px 10px 0px 0px;
         &:hover{
           color: #f60;
         }
       }
     }
   }
-  .webmsg{
-    text-align: center;
-    height: 30px;
-    line-height: 30px;
-    color: #aaa;
-    margin-top: 10px;
-    img{
-      height: 16px;
-    }
-  }
 }
-/*footer end */
+.webmsg{
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 12px;color: #999;
+  line-height: 2;
+}
+/* footer end  */
