@@ -2,6 +2,7 @@
 /* common start  */
 $baseColor:#72b1e4;
 $borderColor:#b8cad8;
+$orange:#f60;
 html,body{
   position: relative;
   margin: 0px;
@@ -384,7 +385,7 @@ ul{
     .secondClass{
       width: 780px;
       padding: 10px;
-      height: 642px;
+      min-height: 642px;
       border-top:1px solid $baseColor;
       float: left;
       .childItem{
@@ -595,7 +596,7 @@ ul{
 }
 /* 轮播产品广告 end */
 /* 入驻商家 start */
-.sellers{
+.index_sellers{
   float: right;
   width: 180px;
   background-color: #fff;
@@ -692,3 +693,285 @@ ul{
   }
 }
 /* footer end  */
+/*标准选择*/
+.crumbs{
+  line-height: 2;
+  font-size: 12px;
+  color: #999;
+  a{
+    color: #999;
+    &.active{
+      color: $baseColor;
+    }
+    &:hover{
+      color: #f60;
+    }
+  }
+}
+.chooseContent{
+  clear: both;
+  overflow: hidden;
+  border: 1px solid #eee;
+  .description{
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    font-size: 20px;
+    color: #666;
+  }
+  .flag{
+    padding: 10px;
+    line-height: 2;
+    font-size: 18px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    color: $baseColor;
+  }
+  .benchmark{
+    clear: both;
+    overflow: hidden;
+  }
+  .tabBtns{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    .btnDin{
+      padding: 0px 20px;
+      background-color: $baseColor;
+      display: inline-block;
+      margin: 0px;
+      color: #fff;
+      margin-right: 1px;
+      &:hover,&.active{
+        background-color: $orange;
+      }
+    }
+  }
+}
+.tabContent{
+  clear: both;
+  overflow: hidden;
+  padding: 10px;
+  .binTable{
+    width: 100%;
+    border: 1px solid #eee;
+    .tableHeader{
+      border-bottom: 1px solid #eee;
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
+      background-color: $baseColor;
+      color: #fff;
+      .t{
+        float: left;
+        width: 80px;
+        text-align: center;
+        border-right: 1px solid #fff;
+      }
+      .d{
+        float: left;
+        width: 758px - 81px;
+        text-align: center;
+      }
+    }
+    .tableBody{
+      .t-tr{
+        border-bottom: 1px solid #eee;
+        clear: both;
+        overflow: hidden;
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+      .t-td{
+        padding: 5px 10px;
+        &.t{
+          float: left;
+          width: 80px;
+          border-right: 1px solid #ddd;
+          text-align: center;
+          padding: 5px 0px;
+        }
+        &.d{
+          float: left;
+          width: 758px - 101px;
+          .c_item{
+            display: inline-block;
+            color: $baseColor;
+            padding: 0px 5px;
+            &:hover{
+              color: $orange;
+            }
+            &.active{
+              background-color: $orange;
+              color: #fff;
+              &:hover{
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* 零件图例 start*/
+.bigContent{
+  width: 980px;
+  float: left;
+  padding: 0px 10px;
+}
+.partsImg{
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  .name_seller{
+    text-align: left;
+  }
+  .innerTable{
+    width: auto;
+    border: 1px solid #eee;
+    font-size: 14px;
+    border-collapse: collapse;
+    th{
+      font-weight: normal;
+      background-color: $baseColor;
+      text-align: center;
+      color: #fff;
+      border-right:1px solid #eee;
+      min-width: 50px;
+    }
+    th,td{
+      padding: 0px 10px;
+      line-height: 30px;
+    }
+    td{
+      border-right: 1px solid #eee;
+      text-align: center;
+    }
+  }
+  .partInfo{
+    text-align: center;
+  }
+  .imgBox{
+    padding: 10px;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    min-height: 120px;
+    img{
+      max-width: 100%;
+    }
+  }
+}
+.sellers{
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  .count_pages{
+    background-color: #f8f8f8;
+    clear: both;
+    overflow: hidden;
+    padding: 0px 10px;
+    .count{
+      float: left;
+      font-size: 16px;
+      color: $baseColor;
+      line-height: 2;
+      em{
+        color: #f00;
+        font-style: normal;
+      }
+    }
+  }
+}
+.pages{
+  float: right;
+  margin-top: 3px;
+  li{
+    display: inline-block;
+    a{
+      height: 24px;
+      line-height: 24px;
+      display: block;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      min-width: 14px;
+      text-align: center;
+      padding: 0px 5px;
+      color: #666;
+      &:hover,&.active{
+        background-color: $baseColor;
+        color: #fff;
+      }
+    }
+  }
+}
+.sellers_box{
+  clear: both;
+  overflow: hidden;
+  margin-right: -12px;
+  .seller_item{
+    width: 224px;
+    float: left;
+    border: 1px solid #eee;
+    margin: 9px;
+    .imgBox{
+      width: 224px;
+      height: 224px;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .money_person{
+      line-height: 2;
+      clear: both;
+      overflow: hidden;
+      padding: 0px 10px;
+      .money{
+        float: left;
+        font-size: 16px;
+        color: $orange;
+      }
+      .person{
+        font-size: 12px;
+        color: #999;
+        line-height: 32px;
+        float: right;
+      }
+    }
+    .names{
+      padding: 0px 10px;
+      font-size: 12px;
+      color: #666;
+      line-height: 1.5;
+      height: 36px;
+      overflow: hidden;
+      .forg{
+        color: $orange;
+      }
+    }
+    .company_address{
+      clear: both;
+      overflow: hidden;
+      padding: 5px 10px;
+      .company{
+        float: left;
+        color: #999;
+      }
+      .address{
+        color: #999;
+        float: right;
+      }
+    }
+  }
+}
+/* 零件图例 end*/
+/*卖家网站 start*/
+@import "seller";
+/*卖家网站 end*/
+/*管理端界面 start*/
+@import "admin";
+/*管理端界面 end*/
