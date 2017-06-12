@@ -366,9 +366,9 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .sellers_box .seller_item .company_address { clear: both; overflow: hidden; padding: 5px 10px; }
 
-.sellers_box .seller_item .company_address .company { float: left; color: #999; }
+.sellers_box .seller_item .company_address .company { float: left; color: #999; margin-top: 0px; }
 
-.sellers_box .seller_item .company_address .address { color: #999; float: right; }
+.sellers_box .seller_item .company_address .address { color: #999; float: right; margin-top: 0px; }
 
 /* 零件图例 end*/
 /*卖家网站 start*/
