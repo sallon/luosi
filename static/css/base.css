@@ -45,7 +45,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 /* logo and search start */
 .logo_search { height: 50px; padding: 10px 0px; margin: 0 auto; background-color: #fff; }
 
-.logo_search .mainLogo { float: left; height: 50px; margin: 5px 0px; width: 25%; }
+.logo_search .mainLogo { float: left; height: 50px; margin: 6px 0px; width: 25%; }
 
 .logo_search .mainLogo img { height: 40px; float: left; }
 
@@ -57,9 +57,11 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .logo_search .searchBox { width: 50%; float: left; text-align: center; }
 
-.logo_search .searchBox .searchCondition { height: 28px; line-height: 28px; width: 80px; border: 1px solid #f60; color: #f60; display: inline-block; margin: 10px; position: relative; padding-right: 30px; vertical-align: middle; border-radius: 3px; }
+.logo_search .searchBox .searchCondition { height: 28px; line-height: 28px; width: 80px; border: 1px solid #f60; color: #f60; display: inline-block; margin: 10px; position: relative; vertical-align: middle; border-radius: 3px; outline: none; }
 
-.logo_search .searchBox .searchCondition::after { content: ""; width: 10px; height: 10px; display: block; position: absolute; background-image: url("../images/common/down.png"); background-size: 90%; background-repeat: no-repeat; top: 10px; right: 10px; }
+.logo_search .searchBox select.searchCondition { height: 30px; }
+
+.logo_search .searchBox input.searchCondition { padding: 0px 10px; }
 
 .logo_search .searchBox .searchBtn { height: 30px; width: 30px; text-align: center; line-height: 30px; color: #fff; border-radius: 3px; background-color: #f60; display: inline-block; font-size: 16px; vertical-align: middle; }
 
@@ -67,9 +69,21 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .logo_search .buySaller { float: left; width: 25%; text-align: right; padding-top: 10px; }
 
-.logo_search .buySaller .buyItem { border: 1px solid #f60; display: inline-block; height: 28px; line-height: 28px; padding: 0px 10px; font-size: 14px; color: #f60; margin-left: 20px; }
+.logo_search .buySaller .buyItem { border: 1px solid #f60; display: inline-block; height: 28px; line-height: 28px; padding: 0px 10px; font-size: 14px; color: #f60; margin-left: 20px; position: relative; }
 
-.logo_search .buySaller .buyItem:hover { background-color: #f60; color: #fff; }
+.logo_search .buySaller .buyItem .down { position: absolute; top: 28px; left: -1px; z-index: 11; width: 96px; border: 1px solid #f60; background-color: #fff; display: none; }
+
+.logo_search .buySaller .buyItem .down li { clear: both; overflow: hidden; text-align: center; }
+
+.logo_search .buySaller .buyItem .down li:not(:last-child) { border-bottom: 1px solid #f60; }
+
+.logo_search .buySaller .buyItem .down li a { color: #f60; display: block; width: 100%; height: 30px; line-height: 30px; }
+
+.logo_search .buySaller .buyItem .down li a:hover { background-color: #f60; color: #fff; }
+
+.logo_search .buySaller .buyItem:hover .down { display: block; }
+
+.logo_search .buySaller .buyItem.car:hover { background-color: #f60; color: #fff; }
 
 /* logo and search end */
 /* menu box start */
@@ -127,11 +141,13 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .leftContent .classBox .firstClass .classList { width: 200px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-.leftContent .classBox .firstClass .classList .classItem { display: block; height: 50px; line-height: 50px; padding-left: 30px; font-size: 16px; border-bottom: 1px solid #eee; color: #666; position: relative; }
+.leftContent .classBox .firstClass .classList .classItem { display: block; height: 56px; line-height: 56px; padding-left: 30px; font-size: 16px; border-bottom: 1px solid #eee; color: #666; position: relative; }
 
-.leftContent .classBox .firstClass .classList .classItem img { width: 30px; margin-top: 10px; vertical-align: top; margin-right: 10px; }
+.leftContent .classBox .firstClass .classList .classItem img { width: 50px; height: 50px; margin-top: 3px; vertical-align: top; margin-right: 10px; }
 
-.leftContent .classBox .firstClass .classList .classItem.active::after { content: ">"; position: absolute; right: 10px; line-height: 50px; }
+.leftContent .classBox .firstClass .classList .classItem.active { background-color: rgba(184, 202, 216, 0.6); }
+
+.leftContent .classBox .firstClass .classList .classItem.active::after { content: ">"; position: absolute; right: 10px; line-height: 56px; }
 
 .leftContent .classBox .firstClass .classList .newClass { height: 50px; line-height: 50px; width: 90%; margin: 10px auto; color: #fff; background-color: #f60; text-align: center; display: block; border-radius: 5px; }
 
@@ -169,9 +185,11 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .model .modelTable { width: 100%; border: 1px solid #b8cad8; }
 
+.model .modelTable tr:first-child td { background-color: #b8cad8; }
+
 .model .modelTable tr:nth-child(2n) { background-color: #f9f9f9; }
 
-.model .modelTable tr:first-child td { color: #72b1e4; font-size: 14px; }
+.model .modelTable tr:first-child td { color: #333; font-size: 14px; }
 
 .model .modelTable tr:first-child td:last-child { color: #333; }
 
@@ -225,15 +243,15 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .index_sellers .flag { height: 40px; background-color: #72b1e4; color: #fff; line-height: 40px; padding-left: 10px; font-size: 16px; }
 
-.index_sellers .sellerList { height: 925px; }
+.index_sellers .sellerList { height: 942px; }
 
-.index_sellers .sellerList .sellerItem { width: 160px; margin: 4px 10px; border: 1px solid #eee; }
+.index_sellers .sellerList .sellerItem { width: 160px; margin: 6px 10px; border: 1px solid #eee; display: block; overflow: hidden; }
 
-.index_sellers .sellerList .sellerItem .name { font-size: 14px; line-height: 2; border-bottom: 1px solid #eee; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0px 10px; color: #666; }
+.index_sellers .sellerList .sellerItem .name { font-size: 14px; line-height: 2; border-bottom: 1px solid #eee; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0px 10px; color: #666; }
 
 .index_sellers .sellerList .sellerItem .tel { text-align: center; font-size: 12px; line-height: 2; color: #999; }
 
-.index_sellers .sellerList .sellerItem .other { padding: 0px 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.index_sellers .sellerList .sellerItem .other { padding: 0px 5px; white-space: nowrap; overflow: hidden; }
 
 .index_sellers .sellerList .sellerItem .other span { display: inline-block; color: #999; }
 
@@ -241,13 +259,17 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .index_sellers .sellerList .sellerItem .other span.count em { font-style: normal; color: #f60; }
 
+.index_sellers .sellerList .sellerItem:hover { border-color: #f60; }
+
+.index_sellers .sellerList .sellerItem:hover .name { color: #f60; }
+
 /* 入驻商家 end */
 /* footer start  */
 .footer { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin-top: 20px; padding: 20px 0px; }
 
 .footer .footerList { width: 100%; }
 
-.footer .footerList li { float: left; width: 33.33%; height: 120px; }
+.footer .footerList li { float: left; width: 33.33%; min-height: 120px; }
 
 .footer .footerList li .footerTitle { font-size: 18px; margin-top: 20px; color: #888; }
 

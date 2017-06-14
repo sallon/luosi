@@ -123,7 +123,7 @@ ul{
   .mainLogo{
     float: left;
     height: 50px;
-    margin: 5px 0px;
+    margin: 6px 0px;
     width: 25%;
     img{
       height: 40px;
@@ -157,21 +157,15 @@ ul{
       display: inline-block;
       margin: 10px;
       position: relative;
-      padding-right: 30px;
       vertical-align: middle;
       border-radius: 3px;
-      &::after{
-        content: "";
-        width: 10px;
-        height: 10px;
-        display: block;
-        position: absolute;
-        background-image: url("../images/common/down.png");
-        background-size: 90%;
-        background-repeat: no-repeat;
-        top:10px;
-        right: 10px;
-      }
+      outline: none;
+    }
+    select.searchCondition{
+      height: 30px;
+    }
+    input.searchCondition{
+      padding: 0px 10px;
     }
     .searchBtn{
       height: 30px;
@@ -203,8 +197,41 @@ ul{
       font-size: 14px;
       color: #f60;
       margin-left: 20px;
-      &:hover{
-        background-color: #f60;
+      position: relative;
+      .down{
+        position: absolute;
+        top:28px;
+        left: -1px;
+        z-index: 11;
+        width: 96px;
+        border: 1px solid #f60;
+        background-color: #fff;
+        display: none;
+        li{
+          clear: both;
+          overflow: hidden;
+          text-align: center;
+          &:not(:last-child){
+            border-bottom: 1px solid #f60;
+          }
+          a{
+            color: $orange;
+            display: block;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            &:hover{
+              background-color: $orange;
+              color: #fff;
+            }
+          }
+        }
+      }
+      &:hover .down{
+        display: block;
+      }
+      &.car:hover{
+        background-color: $orange;
         color: #fff;
       }
     }
@@ -346,24 +373,28 @@ ul{
         box-sizing: border-box;
         .classItem{
           display: block;
-          height: 50px;
-          line-height: 50px;
+          height: 56px;
+          line-height: 56px;
           padding-left: 30px;
           font-size: 16px;
           border-bottom: 1px solid #eee;
           color: #666;
           position: relative;
           img{
-            width: 30px;
-            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            margin-top: 3px;
             vertical-align: top;
             margin-right: 10px;
           }
-          &.active::after{
-            content: ">";
-            position: absolute;
-            right: 10px;
-            line-height: 50px;
+          &.active{
+            background-color: rgba(184, 202, 216, .6);
+            &::after{
+              content: ">";
+              position: absolute;
+              right: 10px;
+              line-height: 56px;
+            }
           }
         }
         .newClass{
@@ -460,12 +491,15 @@ ul{
   .modelTable{
     width: 100%;
     border: 1px solid $borderColor;
+    tr:first-child td{
+      background-color: #b8cad8;
+    }
     tr:nth-child(2n){
       background-color: #f9f9f9;
     }
     tr:first-child{
       td{
-        color: $baseColor;
+        color: #333;
         font-size: 14px;
         &:last-child{
           color: #333;
@@ -609,16 +643,17 @@ ul{
     font-size: 16px;
   }
   .sellerList{
-    height: 925px;
+    height: 942px;
     .sellerItem{
       width: 160px;
-      margin:4px 10px;
+      margin:6px 10px;
       border: 1px solid #eee;
+      display: block;
+      overflow: hidden;
       .name{
         font-size: 14px;
         line-height: 2;
         border-bottom: 1px solid #eee;
-        width: 100%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -635,7 +670,7 @@ ul{
         padding: 0px 5px;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;
+        //text-overflow: ellipsis;
         span{
           display: inline-block;
           color: #999;
@@ -646,6 +681,12 @@ ul{
               color: #f60;
             }
           }
+        }
+      }
+      &:hover{
+        border-color: $orange;
+        .name{
+          color: $orange;
         }
       }
     }
@@ -663,7 +704,7 @@ ul{
     li{
       float: left;
       width: 33.33%;
-      height: 120px;
+      min-height: 120px;
       .footerTitle{
         font-size: 18px;
         margin-top: 20px;
