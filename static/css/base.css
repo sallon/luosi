@@ -137,7 +137,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .leftContent .classBox .firstClass { float: left; width: 200px; }
 
-.leftContent .classBox .firstClass .flag { height: 40px; line-height: 40px; text-align: center; color: #fff; font-size: 16px; background-color: #72b1e4; }
+.leftContent .classBox .firstClass .flag { height: 40px; line-height: 40px; text-align: center; color: #fff; font-size: 20px; background-color: #72b1e4; }
 
 .leftContent .classBox .firstClass .classList { width: 200px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
@@ -241,7 +241,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 /* 入驻商家 start */
 .index_sellers { float: right; width: 180px; background-color: #fff; }
 
-.index_sellers .flag { height: 40px; background-color: #72b1e4; color: #fff; line-height: 40px; padding-left: 10px; font-size: 16px; }
+.index_sellers .flag { height: 40px; background-color: #72b1e4; color: #fff; line-height: 40px; padding-left: 10px; font-size: 20px; }
 
 .index_sellers .sellerList { height: 942px; }
 
@@ -283,7 +283,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 /* footer end  */
 /*标准选择*/
-.crumbs { line-height: 2; font-size: 12px; color: #999; }
+.crumbs { line-height: 2; font-size: 18px; color: #999; }
 
 .crumbs a { color: #999; }
 
@@ -293,9 +293,9 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .chooseContent { clear: both; overflow: hidden; border: 1px solid #eee; }
 
-.chooseContent .description { border-bottom: 1px solid #eee; padding: 10px; font-size: 20px; color: #666; }
+.chooseContent .description { border-bottom: 1px solid #eee; padding: 10px; font-size: 16px; line-height: 2; color: #666; }
 
-.chooseContent .flag { padding: 10px; line-height: 2; font-size: 18px; background-color: #f8f8f8; border-bottom: 1px solid #eee; text-align: center; color: #72b1e4; }
+.chooseContent .flag { padding: 10px; line-height: 2; font-size: 20px; font-weight: bold; background-color: #f8f8f8; border-bottom: 1px solid #eee; text-align: center; color: #72b1e4; }
 
 .chooseContent .benchmark { clear: both; overflow: hidden; }
 
@@ -304,6 +304,20 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 .chooseContent .tabBtns .btnDin { padding: 0px 20px; background-color: #72b1e4; display: inline-block; margin: 0px; color: #fff; margin-right: 1px; }
 
 .chooseContent .tabBtns .btnDin:hover, .chooseContent .tabBtns .btnDin.active { background-color: #f60; }
+
+.benchTable { border: 1px solid #eee; width: 100%; border-collapse: collapse; margin-top: 10px; }
+
+.benchTable th { min-height: 30px; line-height: 30px; text-align: center; background-color: #72b1e4; color: #fff; }
+
+.benchTable th:not(:last-child) { border-right: 1px solid #eee; }
+
+.benchTable tr:not(:last-child) { border-bottom: 1px solid #eee; }
+
+.benchTable tr:nth-child(2n) { background-color: #f8f8f8; }
+
+.benchTable td { border-collapse: collapse; min-height: 30px; text-align: center; padding: 4px; }
+
+.benchTable td:first-child { background-color: rgba(27, 109, 133, 0.5); }
 
 .tabContent { clear: both; overflow: hidden; padding: 10px; }
 
@@ -358,11 +372,11 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .sellers .count_pages { background-color: #f8f8f8; clear: both; overflow: hidden; padding: 0px 10px; }
 
-.sellers .count_pages .count { float: left; font-size: 16px; color: #72b1e4; line-height: 2; }
+.sellers .count_pages .count { float: left; font-size: 20px; color: #72b1e4; line-height: 2; }
 
 .sellers .count_pages .count em { color: #f00; font-style: normal; }
 
-.pages { float: right; margin-top: 3px; }
+.pages { float: right; margin-top: 6px; }
 
 .pages li { display: inline-block; }
 
@@ -382,7 +396,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .sellers_box .seller_item .money_person .person { font-size: 12px; color: #999; line-height: 32px; float: right; }
 
-.sellers_box .seller_item .names { padding: 0px 10px; font-size: 12px; color: #666; line-height: 1.5; height: 36px; overflow: hidden; }
+.sellers_box .seller_item .names { padding: 0px 10px; font-size: 12px; color: #72b1e4; line-height: 1.5; height: 36px; overflow: hidden; }
 
 .sellers_box .seller_item .names .forg { color: #f60; }
 
@@ -391,6 +405,8 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 .sellers_box .seller_item .company_address .company { float: left; color: #999; margin-top: 0px; }
 
 .sellers_box .seller_item .company_address .address { color: #999; float: right; margin-top: 0px; }
+
+.sellers_box .seller_item:hover { -webkit-box-shadow: 0px 5px 5px rgba(99, 99, 99, 0.5); box-shadow: 0px 5px 5px rgba(99, 99, 99, 0.5); border-color: #f60; }
 
 /* 零件图例 end*/
 /*卖家网站 start*/

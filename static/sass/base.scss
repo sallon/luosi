@@ -365,7 +365,7 @@ ul{
         line-height: 40px;
         text-align: center;
         color: #fff;
-        font-size: 16px;
+        font-size: 20px;
         background-color: $baseColor;
       }
       .classList{
@@ -640,7 +640,7 @@ ul{
     color: #fff;
     line-height: 40px;
     padding-left: 10px;
-    font-size: 16px;
+    font-size: 20px;
   }
   .sellerList{
     height: 942px;
@@ -737,7 +737,7 @@ ul{
 /*标准选择*/
 .crumbs{
   line-height: 2;
-  font-size: 12px;
+  font-size: 18px;
   color: #999;
   a{
     color: #999;
@@ -756,13 +756,15 @@ ul{
   .description{
     border-bottom: 1px solid #eee;
     padding: 10px;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 2;
     color: #666;
   }
   .flag{
     padding: 10px;
     line-height: 2;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
     background-color: #f8f8f8;
     border-bottom: 1px solid #eee;
     text-align: center;
@@ -787,6 +789,36 @@ ul{
       &:hover,&.active{
         background-color: $orange;
       }
+    }
+  }
+}
+.benchTable{
+  border: 1px solid #eee;
+  width: 100%;border-collapse:collapse;
+  margin-top: 10px;
+  th{
+    min-height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #72b1e4;
+    color: #fff;
+    &:not(:last-child){
+      border-right:1px solid #eee;
+    }
+  }
+  tr:not(:last-child){
+    border-bottom: 1px solid #eee;
+  }
+  tr:nth-child(2n){
+    background-color: #f8f8f8;
+  }
+  td{
+    border-collapse:collapse;
+    min-height: 30px;
+    text-align: center;
+    padding: 4px;
+    &:first-child{
+      background-color: rgba(27,109,133,0.5);
     }
   }
 }
@@ -918,7 +950,7 @@ ul{
     padding: 0px 10px;
     .count{
       float: left;
-      font-size: 16px;
+      font-size: 20px;
       color: $baseColor;
       line-height: 2;
       em{
@@ -930,7 +962,7 @@ ul{
 }
 .pages{
   float: right;
-  margin-top: 3px;
+  margin-top: 6px;
   li{
     display: inline-block;
     a{
@@ -986,7 +1018,7 @@ ul{
     .names{
       padding: 0px 10px;
       font-size: 12px;
-      color: #666;
+      color: $baseColor;
       line-height: 1.5;
       height: 36px;
       overflow: hidden;
@@ -1008,6 +1040,10 @@ ul{
         float: right;
         margin-top: 0px;
       }
+    }
+    &:hover{
+      box-shadow: 0px 5px 5px rgba(99,99,99,0.5);
+      border-color: $orange;
     }
   }
 }
