@@ -252,6 +252,10 @@ $orange:#f60;
       padding: 0px 10px;
       color: #999;
     }
+    &:hover{
+      border-color: $orange;
+      box-shadow: 0 5px 5px rgba(100,100,100,0.5);
+    }
   }
 }
 .siteTips{
