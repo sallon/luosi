@@ -362,7 +362,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .partsImg .name_seller { text-align: left; }
 
-.partsImg .innerTable { width: auto; border: 1px solid #eee; font-size: 14px; border-collapse: collapse; }
+.partsImg .innerTable { width: auto; border: 1px solid #eee; font-size: 16px; border-collapse: collapse; }
 
 .partsImg .innerTable th { font-weight: normal; background-color: #72b1e4; text-align: center; color: #fff; border-right: 1px solid #eee; min-width: 50px; }
 

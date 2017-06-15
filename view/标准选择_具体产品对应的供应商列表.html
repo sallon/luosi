@@ -35,7 +35,7 @@
     </div>
     <!-- 顶部登录等信息 end -->
     <!-- logo and search box start -->
-    <div class="logo_search clearAll">
+    <div class="logo_search">
         <div class="container">
             <a href="" class="mainLogo">
                 <img src="../static/images/common/logo.jpg" alt="">
@@ -45,17 +45,26 @@
                 </div>
             </a>
             <div class="searchBox">
-                <span class="searchCondition">
-                    JIS
-                </span>
-                <span class="searchCondition">
-                    JIS
-                </span>
-                <a href="" class="searchBtn"><i class="iconfont icon-search"></i></a>
+                <form action="">
+                    <select class="searchCondition" name="">
+                        <option value="1">JIS</option>
+                        <option value="1">JIS1</option>
+                        <option value="1">JIS2</option>
+                    </select>
+                    <input type="text" class="searchCondition" value="JIS-001">
+                    <button type="submit" class="searchBtn"><i class="iconfont icon-search"></i></button>
+                </form>
             </div>
             <div class="buySaller">
-                <a href="" class="buyItem"> <i class="iconfont icon-wode"></i> 我的环球</a>
-                <a href="" class="buyItem"><i class="iconfont icon-buycar"></i>购物车 (9)</a>
+                <div class="buyItem">
+                    <span><i class="iconfont icon-wode"></i> 我的环球</span>
+                    <ul class="down">
+                        <li><a href="" class="d_item">我的关注</a></li>
+                        <li><a href="" class="d_item">item</a></li>
+                        <li><a href="" class="d_item">item</a></li>
+                    </ul>
+                </div>
+                <a href="" class="buyItem car"><i class="iconfont icon-buycar"></i>购物车 (9)</a>
             </div>
         </div>
     </div>
