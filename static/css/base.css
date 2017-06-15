@@ -141,6 +141,10 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .leftContent .classBox .firstClass .classList { width: 200px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
+.leftContent .classBox .firstClass .classList li { position: relative; }
+
+.leftContent .classBox .firstClass .classList li:hover .innerChooseBox { display: block; }
+
 .leftContent .classBox .firstClass .classList .classItem { display: block; height: 56px; line-height: 56px; padding-left: 5px; font-size: 16px; border-bottom: 1px solid #eee; color: #666; position: relative; }
 
 .leftContent .classBox .firstClass .classList .classItem img { width: 50px; height: 50px; margin-top: 3px; vertical-align: top; margin-right: 10px; }
@@ -166,6 +170,8 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 .leftContent .classBox .secondClass .childItem.active, .leftContent .classBox .secondClass .childItem:hover { border-color: #72b1e4; }
 
 .leftContent .classBox .secondClass .childItem.active .childName, .leftContent .classBox .secondClass .childItem:hover .childName { background-color: #72b1e4; }
+
+.leftContent .classBox .secondClass.innerChooseBox { position: absolute; z-index: 10; background-color: #fff; display: none; left: 200px; top: 0px; -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); }
 
 /* 左右结构 end */
 /* 询价表哥 start */

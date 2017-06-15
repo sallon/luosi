@@ -374,6 +374,14 @@ ul{
       .classList{
         width: 200px;
         box-sizing: border-box;
+        li{
+          position: relative;
+          &:hover{
+            .innerChooseBox{
+              display: block;
+            }
+          }
+        }
         .classItem{
           display: block;
           height: 56px;
@@ -452,6 +460,15 @@ ul{
             background-color: $baseColor;
           }
         }
+      }
+      &.innerChooseBox{
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+        display: none;
+        left: 200px;
+        top:0px;
+        box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
       }
     }
   }
