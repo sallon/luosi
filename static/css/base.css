@@ -642,13 +642,15 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .a_content .ac_content { padding: 10px 0px 10px 10px; }
 
-.a_content .ac_content label { float: left; text-align: center; width: 230px; border: 1px solid #eee; margin-right: 14px; margin-bottom: 20px; }
+.a_content .ac_content label { float: left; text-align: center; width: 148px; border: 1px solid #eee; margin-right: 14px; margin-bottom: 20px; }
 
-.a_content .ac_content label .gc_img { width: 230px; height: 185px; overflow: hidden; }
+.a_content .ac_content label .gc_img { width: 148px; height: 120px; overflow: hidden; }
 
 .a_content .ac_content label .gc_img img { width: 100%; max-height: 185px; }
 
 .a_content .ac_content label .cn { height: 30px; background-color: #72b1e4; color: #fff; line-height: 30px; font-size: 14px; }
+
+.a_content .ac_content label:hover { border-color: #f60; }
 
 .btnBox { text-align: center; }
 

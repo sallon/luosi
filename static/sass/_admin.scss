@@ -168,13 +168,13 @@
         label{
             float: left;
             text-align: center;
-            width: 230px;
+            width: 148px;
             border: 1px solid #eee;
             margin-right: 14px;
             margin-bottom: 20px;
             .gc_img{
-                width: 230px;
-                height: 185px;
+                width: 148px;
+                height: 120px;
                 overflow: hidden;
                 img{
                     width: 100%;
@@ -187,6 +187,9 @@
                 color: #fff;
                 line-height: 30px;
                 font-size: 14px;
+            }
+            &:hover{
+                border-color: $orange;
             }
         }
     }
