@@ -377,6 +377,7 @@ ul{
         li{
           position: relative;
           &:hover{
+            background-color: rgba(184, 202, 216, 0.6);
             .innerChooseBox{
               display: block;
             }

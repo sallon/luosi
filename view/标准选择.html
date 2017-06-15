@@ -35,7 +35,7 @@
     </div>
     <!-- 顶部登录等信息 end -->
     <!-- logo and search box start -->
-    <div class="logo_search clearAll">
+    <div class="logo_search">
         <div class="container">
             <a href="" class="mainLogo">
                 <img src="../static/images/common/logo.jpg" alt="">
@@ -45,17 +45,26 @@
                 </div>
             </a>
             <div class="searchBox">
-                <span class="searchCondition">
-                    JIS
-                </span>
-                <span class="searchCondition">
-                    JIS
-                </span>
-                <a href="" class="searchBtn"><i class="iconfont icon-search"></i></a>
+                <form action="">
+                    <select class="searchCondition" name="">
+                        <option value="1">JIS</option>
+                        <option value="1">JIS1</option>
+                        <option value="1">JIS2</option>
+                    </select>
+                    <input type="text" class="searchCondition" value="JIS-001">
+                    <button type="submit" class="searchBtn"><i class="iconfont icon-search"></i></button>
+                </form>
             </div>
             <div class="buySaller">
-                <a href="" class="buyItem"> <i class="iconfont icon-wode"></i> 我的环球</a>
-                <a href="" class="buyItem"><i class="iconfont icon-buycar"></i>购物车 (9)</a>
+                <div class="buyItem">
+                    <span><i class="iconfont icon-wode"></i> 我的环球</span>
+                    <ul class="down">
+                        <li><a href="" class="d_item">我的关注</a></li>
+                        <li><a href="" class="d_item">item</a></li>
+                        <li><a href="" class="d_item">item</a></li>
+                    </ul>
+                </div>
+                <a href="" class="buyItem car"><i class="iconfont icon-buycar"></i>购物车 (9)</a>
             </div>
         </div>
     </div>
@@ -1238,12 +1247,12 @@
                             </div>
                             <div class="benchmark">
                                 <div class="tabBtns">
-                                    <a href="" class="btnDin active">DIN933
-                                    </a><a href="" class="btnDin">ISO4017
-                                    </a><a href="" class="btnDin">GB/T 5783</a>
+                                    <a href="javascript:void(0);" class="btnDin active">DIN933
+                                    </a><a href="javascript:void(0);" class="btnDin">ISO4017
+                                    </a><a href="javascript:void(0);" class="btnDin">GB/T 5783</a>
                                 </div>
                                 <div class="tabContent">
-                                    <div class="binTable clearAll">
+                                    <div class="binTable clearAll con" id="con-1">
                                         <div class="tableHeader clearAll">
                                             <span class="t">规格</span>
                                             <span class="d">长度列表</span>
@@ -1505,7 +1514,58 @@
                                     </div>
 
                                     <!-- 事例table start -->
-                                    <table class="benchTable">
+                                    <table class="benchTable con" id="con-2" style="display: none;">
+                                        <thead>
+                                        <tr>
+                                            <th>TH</th>
+                                            <th>TH</th>
+                                            <th>TH</th>
+                                            <th>TH</th>
+                                            <th>TH</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                            <td>TD</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- 事例table end -->
+
+                                    <!-- 事例table start -->
+                                    <table class="benchTable con" id="con-3" style="display: none;">
                                         <thead>
                                         <tr>
                                             <th>TH</th>
@@ -1779,6 +1839,15 @@
     <script type="text/javascript" src="../static/js/common.js"></script>
     <script type="text/javascript">
         $(function() {
+            $(".tabBtns").find("a").each(function(i){
+                $(this).on("mouseover",function(){
+                    $(".con").hide();
+                    $("#con-"+parseInt(i+1)).show();
+                    $(this).parent().find("a").removeClass("active");
+                    $(this).addClass("active");
+                })
+
+            })
             $('#slider').slidesjs({
                 width: 1200,
                 height: 200,
