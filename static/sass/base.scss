@@ -117,12 +117,12 @@ ul{
 /* logo and search start */
 .logo_search{
   height: 50px;
-  padding: 10px 0px;
+  padding: 1px 0px;
   margin: 0 auto;
   background-color: #fff;
   .mainLogo{
     float: left;
-    height: 50px;
+    height: 40px;
     margin: 6px 0px;
     width: 25%;
     img{
@@ -171,13 +171,16 @@ ul{
       height: 30px;
       width: 30px;
       text-align: center;
-      line-height: 30px;
+      //line-height: 30px;
       color: #fff;
       border-radius: 3px;
       background-color: #f60;
       display: inline-block;
       font-size: 16px;
       vertical-align: middle;
+      box-shadow: none;
+      border: 1px solid $orange;
+      outline: none;
       &:hover{
         background-color: #f90;
       }
@@ -420,15 +423,15 @@ ul{
       border-top:1px solid $baseColor;
       float: left;
       .childItem{
-        width: 126px;
-        height: 133px;
+        width: 153px;
+        height: 160px;
         border: 1px solid #b8cad8;
         float: left;
         margin-right: 1px;
         margin-bottom: 1px;
         .childImg{
-          width: 126px;
-          height: 103px;
+          width: 153px;
+          height: 130px;
           clear: both;
           overflow: hidden;
           img{
