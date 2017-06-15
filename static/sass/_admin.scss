@@ -7,19 +7,19 @@
     background-size: 100% 100%;
     .logo{
         float: left;
-        margin: 20px 10px;
+        margin: 18px 10px;
         img{
             vertical-align: middle;
             max-height: 30px;
             margin-right: 10px;
         }
         color: #fff;
-        font-size: 20px;
+        font-size: 28px;
         line-height: 30px;
     }
     .user{
         color: #fff;
-        font-size: 18px;
+        font-size: 24px;
         line-height: 30px;
         margin-top: 20px;
         margin-left: 30px;
@@ -28,7 +28,7 @@
         float: right;
         line-height: 30px;
         margin-top:20px;
-        font-size: 18px;
+        font-size: 26px;
         color: #fff;
         margin-right: 10px;
     }
@@ -45,8 +45,9 @@
         float: left;
         line-height: 35px;
         padding-left: 20px;
-        font-size: 16px;
-        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: left;
     }
     .crumb_todo{
         float: left;
@@ -54,6 +55,7 @@
         line-height: 35px;
         a{
             color: #999;
+            font-size: 16px;
             &:hover,&.active{
                 color: $baseColor;
             }
@@ -67,6 +69,7 @@
             margin-left: 30px;
             line-height: 35px;
             color: #666;
+            font-size: 16px;
             &:hover{
                 color: $orange;
             }
@@ -89,7 +92,7 @@
             background-size: 100% 35px;
             height: 35px;
             color: #fff;
-            font-size: 16px;
+            font-size: 18px;
             line-height: 35px;
             padding-left: 30px;
             box-sizing: border-box;
@@ -109,6 +112,7 @@
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
                 margin-bottom: 10px;
+                font-size: 14px;
                 &::before{
                     content: "";
                     width: 10px;
@@ -119,7 +123,7 @@
                     background-size: contain;
                     background-repeat: no-repeat;
                     float: left;
-                    margin: 10px 10px;
+                    margin: 10px 5px;
                 }
                 &:hover,&.active{
                     background-image: url("../images/common/am_active.jpg");
@@ -152,12 +156,12 @@
     padding-bottom: 200px;
     position: relative;
     .ac_top{
-        height: 40px;
-        line-height: 40px;
+        height: 50px;
+        line-height: 50px;
         color: #666;
         border-bottom: 2px solid $baseColor;
         text-align: center;
-        font-size: 16px;
+        font-size: 20px;
     }
     .ac_content{
         padding: 10px 0px 10px 10px;
@@ -226,7 +230,7 @@
     margin-right: 10px;
     background-color: #f8f8f8;
     .count{
-        font-size: 16px;
+        font-size: 18px;
         color: $orange;
         padding-left: 10px;
         margin-top: 7px;
@@ -295,6 +299,10 @@
                 float: right;
                 color: #999;
             }
+        }
+        &:hover{
+            border-color: $orange;
+            box-shadow: 0px 5px 5px rgba(100,100,100,0.5);
         }
     }
 }
