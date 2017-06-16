@@ -265,7 +265,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .index_sellers .sellerList .sellerItem .other span.count em { font-style: normal; color: #f60; }
 
-.index_sellers .sellerList .sellerItem .other span.address { float: right; }
+.index_sellers .sellerList .sellerItem .other span.address { width: 91px; text-align: center; float: right; }
 
 .index_sellers .sellerList .sellerItem:hover { border-color: #f60; }
 
