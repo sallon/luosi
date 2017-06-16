@@ -792,7 +792,7 @@ ul{
   .flag{
     padding: 10px;
     line-height: 2;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     background-color: #f8f8f8;
     border-bottom: 1px solid #eee;
@@ -846,6 +846,7 @@ ul{
     min-height: 30px;
     text-align: center;
     padding: 4px;
+    border-right: 1px solid #eee;
     &:first-child{
       background-color: rgba(27,109,133,0.5);
     }

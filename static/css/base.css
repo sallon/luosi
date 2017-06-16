@@ -303,7 +303,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .chooseContent .description { border-bottom: 1px solid #eee; padding: 10px; font-size: 16px; line-height: 2; color: #666; }
 
-.chooseContent .flag { padding: 10px; line-height: 2; font-size: 20px; font-weight: bold; background-color: #f8f8f8; border-bottom: 1px solid #eee; text-align: center; color: #72b1e4; }
+.chooseContent .flag { padding: 10px; line-height: 2; font-size: 24px; font-weight: bold; background-color: #f8f8f8; border-bottom: 1px solid #eee; text-align: center; color: #72b1e4; }
 
 .chooseContent .benchmark { clear: both; overflow: hidden; }
 
@@ -323,7 +323,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .benchTable tr:nth-child(2n) { background-color: #f8f8f8; }
 
-.benchTable td { border-collapse: collapse; min-height: 30px; text-align: center; padding: 4px; }
+.benchTable td { border-collapse: collapse; min-height: 30px; text-align: center; padding: 4px; border-right: 1px solid #eee; }
 
 .benchTable td:first-child { background-color: rgba(27, 109, 133, 0.5); }
 
