@@ -251,8 +251,6 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .index_sellers .flag { height: 40px; background-color: #72b1e4; color: #fff; line-height: 40px; padding-left: 10px; font-size: 20px; }
 
-.index_sellers .sellerList { height: 942px; }
-
 .index_sellers .sellerList .sellerItem { width: 180px; margin: 6px 5px; border: 1px solid #eee; display: block; overflow: hidden; }
 
 .index_sellers .sellerList .sellerItem .name { font-size: 14px; line-height: 2; border-bottom: 1px solid #eee; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0px 10px; color: #666; }
