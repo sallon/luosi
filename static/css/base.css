@@ -91,13 +91,13 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .menu .menuInner { width: 1200px; }
 
-.menu .menuInner li { display: inline-block; vertical-align: bottom; }
+.menu .menuInner li { display: inline-block; vertical-align: bottom; /*卖家中心 二级菜单 start*/ /*卖家中心 二级菜单 end*/ }
 
 .menu .menuInner li.menuItem { position: relative; }
 
 .menu .menuInner li.menuItem a { display: block; color: #fff; line-height: 40px; height: 40px; font-size: 14px; background-color: rgba(35, 140, 225, 0); text-align: center; width: 100px; }
 
-.menu .menuInner li.menuItem a:hover { -webkit-transition: background-color 0.3s; transition: background-color 0.3s; background-color: #238ce1; }
+.menu .menuInner li.menuItem:hover { -webkit-transition: background-color 0.3s; transition: background-color 0.3s; background-color: #238ce1; }
 
 .menu .menuInner li.menuItem.active { background-color: #238ce1; }
 
@@ -110,6 +110,22 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 .menu .menuInner li.menuItem .secondMenu li a { display: block; line-height: 40px; width: 100px; background-color: #72b1e4; }
 
 .menu .menuInner li.menuItem .secondMenu li a:hover { background-color: #238ce1; }
+
+.menu .menuInner li.m_sel .mi_se { position: absolute; background-color: #72b1e4; width: 100%; display: none; }
+
+.menu .menuInner li.m_sel .mi_se li { position: relative; display: block; width: 100%; line-height: 40px; font-size: 14px; border-bottom: 1px solid #fff; text-align: center; }
+
+.menu .menuInner li.m_sel .mi_se li .mi_th { position: absolute; left: 100%; top: 0px; display: none; background-color: #72b1e4; border-left: 1px solid #fff; }
+
+.menu .menuInner li.m_sel .mi_se li .mi_th a { display: block; width: 90px; }
+
+.menu .menuInner li.m_sel .mi_se li .mi_th a:hover { background-color: #238ce1; }
+
+.menu .menuInner li.m_sel .mi_se li:hover { background-color: #238ce1; }
+
+.menu .menuInner li.m_sel .mi_se li:hover .mi_th { display: block; }
+
+.menu .menuInner li.m_sel:hover .mi_se { display: block; }
 
 .menu .aboutBtn { position: absolute; height: 40px; line-height: 40px; color: #fff; top: 0px; right: 0px; }
 
@@ -424,13 +440,23 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .companyNameBox .name { position: absolute; height: 30px; line-height: 30px; font-size: 20px; color: #333; top: 50%; margin-top: -15px; width: 100%; text-align: center; }
 
+.companyNameBox .c_slide { position: relative; }
+
+.companyNameBox .c_slide .slidesjs-pagination { position: absolute; width: 100%; text-align: center; bottom: 5px; z-index: 10; }
+
+.companyNameBox .c_slide .slidesjs-pagination li { display: inline-block; height: 5px; width: 20px; background-color: #1b6d85; margin: 0px 4px; }
+
+.companyNameBox .c_slide .slidesjs-pagination li a { display: block; width: 100%; height: 100%; overflow: hidden; line-height: 99; }
+
+.companyNameBox .c_slide .slidesjs-pagination li a.active { background-color: #fff; }
+
 .company { margin-top: 10px; }
 
 .company .leftPart { float: left; width: 240px; }
 
 .company .leftPart .document { border: 1px solid #eee; background-color: #fff; }
 
-.company .leftPart .document .head { padding: 0px 10px; height: 40px; line-height: 40px; color: #fff; background-color: #72b1e4; font-size: 16px; }
+.company .leftPart .document .head { padding: 0px 10px; height: 40px; line-height: 40px; color: #fff; background-color: #72b1e4; font-size: 18px; }
 
 .company .leftPart .document .body { padding: 10px; font-size: 14px; line-height: 2; }
 
@@ -452,7 +478,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .company .leftPart .contact { border: 1px solid #eee; background-color: #fff; margin-top: 10px; margin-bottom: 30px; }
 
-.company .leftPart .contact .head { padding: 0px 10px; height: 40px; line-height: 40px; color: #fff; background-color: #72b1e4; font-size: 16px; }
+.company .leftPart .contact .head { padding: 0px 10px; height: 40px; line-height: 40px; color: #fff; background-color: #72b1e4; font-size: 18px; }
 
 .company .leftPart .contact .head .more { float: right; font-size: 14px; color: #fff; }
 
@@ -474,11 +500,11 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .company .rightPart .model { margin-top: 0px; margin-bottom: 10px; border: 1px solid #eee; }
 
-.company .rightPart .model .head { height: 40px; line-height: 40px; padding: 0px 10px; color: #72b1e4; font-size: 16px; border-bottom: 2px solid #72b1e4; }
+.company .rightPart .model .head { height: 40px; line-height: 40px; padding: 0px 10px; color: #72b1e4; font-size: 18px; border-bottom: 2px solid #72b1e4; }
 
 .company .rightPart .model .body { font-size: 14px; clear: both; overflow: hidden; line-height: 2; padding: 10px; }
 
-.company .rightPart .model .body .imgBox { margin: 10px; border: 1px solid #eee; text-align: center; }
+.company .rightPart .model .body .imgBox { margin: 10px; border: 1px solid #eee; text-align: center; width: 295px; height: 213px; overflow: hidden; }
 
 .company .rightPart .model .body .imgBox.fleft { float: left; }
 
@@ -585,11 +611,15 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .mesgBox .form_item .inputBox textarea { height: 150px; resize: none; padding: 10px; }
 
-.mesgBox .submitBtn { display: block; width: 150px; background-color: #f90; color: #fff; height: 40px; line-height: 40px; text-align: center; margin: 30px auto; }
+.mesgBox .submitBtn { display: block; width: 150px; background-color: #f90; color: #fff; height: 40px; line-height: 40px; text-align: center; margin: 30px auto; border: 1px solid #f60; font-size: 20px; padding: 0px; outline: none; }
 
 .mesgBox .submitBtn:hover { background-color: #f60; }
 
 /* 公司相册 end */
+.m_pages { background-color: #f8f8f8; padding: 0px 10px; }
+
+.m_pages .count { font-size: 18px; line-height: 40px; }
+
 /*卖家网站 end*/
 /*管理端界面 start*/
 .a_header { height: 70px; position: relative; background-image: url("../images/common/ahead.jpg"); background-repeat: no-repeat; background-size: 100% 100%; }

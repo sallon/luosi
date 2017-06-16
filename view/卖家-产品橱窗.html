@@ -8,14 +8,6 @@
     <link rel="stylesheet" href="../static/css/base.css">
 </head>
 <body>
-    <!--&lt;!&ndash; 顶部广告 start&ndash;&gt;-->
-    <!--<div class="topAdv" style="background-color: #72b0e3">-->
-        <!--<div class="topImg" style="height: 80px;">-->
-            <!--<img src="../static/images/common/topadv.jpg" alt="">-->
-            <!--<a href="javascript:void(0);" onclick="closeTopAdv();" class="closeBtn">X</a>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--&lt;!&ndash; 顶部广告 end&ndash;&gt;-->
     <!-- 顶部登录等信息 start -->
     <div class="topBar">
         <div class="container">
@@ -38,8 +30,11 @@
     <!--公司名称 start -->
     <div class="companyNameBox">
         <!--公司名称背景图 start-->
-        <img class="bg" src="../static/images/examples/bg.jpg" alt="公司名称">
-        <span class="name">江苏无锡基瓦涡轮增压科技有限公司</span>
+        <div class="c_slide" id="c_slide">
+            <img class="bg" src="../static/images/examples/bg.jpg" alt="公司名称">
+            <img class="bg" src="../static/images/examples/bg-2.jpg" alt="公司名称">
+            <img class="bg" src="../static/images/examples/bg-3.jpg" alt="公司名称">
+        </div>
         <!--公司名称背景图 end-->
     </div>
     <!--公司名称 end -->
@@ -49,7 +44,42 @@
         <div class="container" style="position: relative">
             <ul class="menuInner">
                 <li class="menuItem active"><a href="">公司介绍</a></li>
-                <li class="menuItem"><a href="">产品目录</a></li>
+                <li class="menuItem m_sel"><a href="javascript:void(0);">产品目录</a>
+                    <ul class="mi_se">
+                        <li>子菜单1
+                            <ul class="mi_th">
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                            </ul>
+                        </li>
+                        <li>子菜单1
+                            <ul class="mi_th">
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                            </ul>
+                        </li>
+                        <li>子菜单1
+                            <ul class="mi_th">
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                            </ul>
+                        </li>
+                        <li>子菜单1
+                            <ul class="mi_th">
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
                 <li class="menuItem"><a href="">公司相册</a></li>
                 <li class="menuItem"><a href="">联系方式</a></li>
                 <li class="menuItem"><a href="#">在线留言</a></li>
@@ -121,8 +151,8 @@
             <div class="model">
                 <div class="head"><i class="iconfont icon-xiangce"></i>产品橱窗</div>
                 <div class="body">
-                    <div class="clearAll">
-                        <span>共182条信息，19页</span>
+                    <div class="clearAll m_pages">
+                        <span class="count">共182条信息，19页</span>
                         <ul class="pages">
                             <li><a href="">上一页</a></li>
                             <li><a href=""  class="active">1</a></li>
@@ -252,8 +282,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="clearAll">
-                        <span>共182条信息，19页</span>
+                    <div class="clearAll m_pages">
+                        <span  class="count">共182条信息，19页</span>
                         <ul class="pages">
                             <li><a href="">上一页</a></li>
                             <li><a href=""  class="active">1</a></li>
@@ -310,36 +340,6 @@
     <!-- 网站广告 end -->
 
     <!-- footer start -->
-    <div class="footer clearAll">
-        <div class="container">
-            <ul class="footerList">
-                <li>
-                    <p class="footerTitle"><i class="iconfont icon-maijia"></i>买家教程</p>
-                    <a href="#">如何查找产品</a>
-                    <a href="#">如何查找厂家</a>
-                    <a href="#">甄别产品和厂家</a>
-                    <a href="#">确定卖家</a>
-                </li>
-                <li>
-                    <p class="footerTitle"><i class="iconfont icon-maijia1"></i>卖家教程</p>
-                    <a href="#">注册指南</a>
-                    <a href="#">基本信息上传</a>
-                    <a href="#">我有新品</a>
-                    <a href="#">联系我们</a>
-                    <a href="#">基本信息上传</a>
-                    <a href="#">我有新品</a>
-                    <a href="#">联系我们</a>
-                </li>
-                <li>
-                    <p class="footerTitle"><i class="iconfont icon-guanyu"></i>关于平台</p>
-                    <a href="#">平台介绍</a>
-                    <a href="#">成为供应商</a>
-                    <a href="#">加入我们</a>
-                    <a href="#">联系我们</a>
-                </li>
-            </ul>
-        </div>
-    </div>
     <div class="webmsg clearAll">
         <div class="container">
             <p>江苏省&nbsp;&nbsp;&nbsp;&nbsp;无锡市&nbsp;&nbsp;&nbsp;&nbsp;滨湖区&nbsp;&nbsp;&nbsp;&nbsp;工业设计院&nbsp;&nbsp;&nbsp;&nbsp;214000</p>
@@ -352,6 +352,23 @@
         </div>
     </div>
     <!-- footer end -->
-
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/jquery.slides.min.js"></script>
+    <script>
+        $(function(){
+            $('#c_slide').slidesjs({
+                width: 1200,
+                height: 120,
+                navigation:{
+                    active:false
+                },
+                play: {
+                    active: false,
+                    auto: true,
+                    interval: 4000,
+                }
+            });
+        })
+    </script>
 </body>
 </html>

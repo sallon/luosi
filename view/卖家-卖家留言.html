@@ -30,8 +30,11 @@
     <!--公司名称 start -->
     <div class="companyNameBox">
         <!--公司名称背景图 start-->
-        <img class="bg" src="../static/images/examples/bg.jpg" alt="公司名称">
-        <span class="name">江苏无锡基瓦涡轮增压科技有限公司</span>
+        <div class="c_slide" id="c_slide">
+            <img class="bg" src="../static/images/examples/bg.jpg" alt="公司名称">
+            <img class="bg" src="../static/images/examples/bg-2.jpg" alt="公司名称">
+            <img class="bg" src="../static/images/examples/bg-3.jpg" alt="公司名称">
+        </div>
         <!--公司名称背景图 end-->
     </div>
     <!--公司名称 end -->
@@ -41,7 +44,42 @@
         <div class="container" style="position: relative">
             <ul class="menuInner">
                 <li class="menuItem active"><a href="">公司介绍</a></li>
-                <li class="menuItem"><a href="">产品目录</a></li>
+                <li class="menuItem m_sel"><a href="javascript:void(0);">产品目录</a>
+                    <ul class="mi_se">
+                        <li>子菜单1
+                            <ul class="mi_th">
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                            </ul>
+                        </li>
+                        <li>子菜单1
+                            <ul class="mi_th">
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                            </ul>
+                        </li>
+                        <li>子菜单1
+                            <ul class="mi_th">
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                            </ul>
+                        </li>
+                        <li>子菜单1
+                            <ul class="mi_th">
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                                <li><a href="">子菜单-1-1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
                 <li class="menuItem"><a href="">公司相册</a></li>
                 <li class="menuItem"><a href="">联系方式</a></li>
                 <li class="menuItem"><a href="#">在线留言</a></li>
@@ -112,34 +150,36 @@
         <div class="rightPart">
             <div class="model">
                 <div class="head"><i class="iconfont icon-contact"></i>在线留言</div>
-                <div class="body mesgBox">
-                    <p class="com_flag">上海盖瑞特涡轮增压技术有限公司</p>
-                    <div class="form_item">
-                        <span class="i_n">留言标题 <em>*</em></span>
-                        <div class="inputBox"><input type="text"></div>
+                <form action="">
+                    <div class="body mesgBox">
+                        <p class="com_flag">上海盖瑞特涡轮增压技术有限公司</p>
+                        <div class="form_item">
+                            <span class="i_n">留言标题 <em>*</em></span>
+                            <div class="inputBox"><input type="text"></div>
+                        </div>
+                        <div class="form_item">
+                            <span class="i_n">详细说明</span>
+                            <div class="inputBox"><textarea name=""></textarea></div>
+                        </div>
+                        <div class="form_item">
+                            <span class="i_n">公司名称 <em>*</em></span>
+                            <div class="inputBox"><input type="text"></div>
+                        </div>
+                        <div class="form_item">
+                            <span class="i_n">联系人 <em>*</em></span>
+                            <div class="inputBox"><input type="text"></div>
+                        </div>
+                        <div class="form_item">
+                            <span class="i_n">电话号码 <em>*</em></span>
+                            <div class="inputBox"><input type="text"></div>
+                        </div>
+                        <div class="form_item">
+                            <span class="i_n">手机号码 <em>*</em></span>
+                            <div class="inputBox"><input type="text"></div>
+                        </div>
+                        <input type="submit" class="submitBtn">
                     </div>
-                    <div class="form_item">
-                        <span class="i_n">详细说明</span>
-                        <div class="inputBox"><textarea name=""></textarea></div>
-                    </div>
-                    <div class="form_item">
-                        <span class="i_n">公司名称 <em>*</em></span>
-                        <div class="inputBox"><input type="text"></div>
-                    </div>
-                    <div class="form_item">
-                        <span class="i_n">联系人 <em>*</em></span>
-                        <div class="inputBox"><input type="text"></div>
-                    </div>
-                    <div class="form_item">
-                        <span class="i_n">电话号码 <em>*</em></span>
-                        <div class="inputBox"><input type="text"></div>
-                    </div>
-                    <div class="form_item">
-                        <span class="i_n">手机号码 <em>*</em></span>
-                        <div class="inputBox"><input type="text"></div>
-                    </div>
-                    <a href="" class="submitBtn">提交</a>
-                </div>
+                </form>
             </div>
 
         </div>
@@ -186,36 +226,6 @@
     <!-- 网站广告 end -->
 
     <!-- footer start -->
-    <div class="footer clearAll">
-        <div class="container">
-            <ul class="footerList">
-                <li>
-                    <p class="footerTitle"><i class="iconfont icon-maijia"></i>买家教程</p>
-                    <a href="#">如何查找产品</a>
-                    <a href="#">如何查找厂家</a>
-                    <a href="#">甄别产品和厂家</a>
-                    <a href="#">确定卖家</a>
-                </li>
-                <li>
-                    <p class="footerTitle"><i class="iconfont icon-maijia1"></i>卖家教程</p>
-                    <a href="#">注册指南</a>
-                    <a href="#">基本信息上传</a>
-                    <a href="#">我有新品</a>
-                    <a href="#">联系我们</a>
-                    <a href="#">基本信息上传</a>
-                    <a href="#">我有新品</a>
-                    <a href="#">联系我们</a>
-                </li>
-                <li>
-                    <p class="footerTitle"><i class="iconfont icon-guanyu"></i>关于平台</p>
-                    <a href="#">平台介绍</a>
-                    <a href="#">成为供应商</a>
-                    <a href="#">加入我们</a>
-                    <a href="#">联系我们</a>
-                </li>
-            </ul>
-        </div>
-    </div>
     <div class="webmsg clearAll">
         <div class="container">
             <p>江苏省&nbsp;&nbsp;&nbsp;&nbsp;无锡市&nbsp;&nbsp;&nbsp;&nbsp;滨湖区&nbsp;&nbsp;&nbsp;&nbsp;工业设计院&nbsp;&nbsp;&nbsp;&nbsp;214000</p>
@@ -228,6 +238,24 @@
         </div>
     </div>
     <!-- footer end -->
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/jquery.slides.min.js"></script>
+    <script>
+        $(function(){
+            $('#c_slide').slidesjs({
+                width: 1200,
+                height: 120,
+                navigation:{
+                    active:false
+                },
+                play: {
+                    active: false,
+                    auto: true,
+                    interval: 4000,
+                }
+            });
+        })
+    </script>
 
 </body>
 </html>
