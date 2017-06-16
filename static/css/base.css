@@ -43,9 +43,9 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 .topBar .topA .na:not(:last-child)::after { content: ""; position: absolute; color: #999; right: 0px; height: 30px; top: 0px; width: 1px; background-color: #c8c8c8; }
 
 /* logo and search start */
-.logo_search { height: 50px; padding: 1px 0px; margin: 0 auto; background-color: #fff; }
+.logo_search { height: 42px; padding: 1px 0px; margin: 0 auto; background-color: #fff; }
 
-.logo_search .mainLogo { float: left; height: 40px; margin: 6px 0px; width: 25%; }
+.logo_search .mainLogo { float: left; height: 40px; margin: 1px 0px; width: 25%; }
 
 .logo_search .mainLogo img { height: 40px; float: left; }
 
@@ -57,7 +57,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .logo_search .searchBox { width: 50%; float: left; text-align: center; }
 
-.logo_search .searchBox .searchCondition { height: 28px; line-height: 28px; width: 80px; border: 1px solid #f60; color: #f60; display: inline-block; margin: 10px; position: relative; vertical-align: middle; border-radius: 3px; outline: none; }
+.logo_search .searchBox .searchCondition { height: 28px; line-height: 28px; width: 80px; border: 1px solid #f60; color: #f60; display: inline-block; margin: 6px; position: relative; vertical-align: middle; border-radius: 3px; outline: none; }
 
 .logo_search .searchBox select.searchCondition { height: 30px; }
 
@@ -67,7 +67,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .logo_search .searchBox .searchBtn:hover { background-color: #f90; }
 
-.logo_search .buySaller { float: left; width: 25%; text-align: right; padding-top: 10px; }
+.logo_search .buySaller { float: left; width: 25%; text-align: right; padding-top: 6px; }
 
 .logo_search .buySaller .buyItem { border: 1px solid #f60; display: inline-block; height: 28px; line-height: 28px; padding: 0px 10px; font-size: 14px; color: #f60; margin-left: 20px; position: relative; }
 
@@ -149,11 +149,11 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .leftContent .classBox .firstClass .classList .classItem { display: block; height: 56px; line-height: 56px; padding-left: 5px; font-size: 16px; border-bottom: 1px solid #eee; color: #666; position: relative; }
 
-.leftContent .classBox .firstClass .classList .classItem img { width: 50px; height: 50px; margin-top: 3px; vertical-align: top; margin-right: 10px; }
+.leftContent .classBox .firstClass .classList .classItem .ci_img { width: 100px; text-align: center; height: 50px; display: inline-block; margin-top: 3px; margin-right: 10px; }
+
+.leftContent .classBox .firstClass .classList .classItem .ci_img img { vertical-align: top; height: 50px; max-width: 100px; }
 
 .leftContent .classBox .firstClass .classList .classItem.active { background-color: rgba(184, 202, 216, 0.6); }
-
-.leftContent .classBox .firstClass .classList .classItem.active::after { content: ">"; position: absolute; right: 10px; line-height: 56px; }
 
 .leftContent .classBox .firstClass .classList .newClass { height: 50px; line-height: 50px; width: 90%; margin: 10px auto; color: #fff; background-color: #f60; text-align: center; display: block; border-radius: 5px; font-size: 18px; }
 
@@ -247,25 +247,27 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 /* 轮播产品广告 end */
 /* 入驻商家 start */
-.index_sellers { float: right; width: 180px; background-color: #fff; }
+.index_sellers { float: right; width: 190px; background-color: #fff; }
 
 .index_sellers .flag { height: 40px; background-color: #72b1e4; color: #fff; line-height: 40px; padding-left: 10px; font-size: 20px; }
 
 .index_sellers .sellerList { height: 942px; }
 
-.index_sellers .sellerList .sellerItem { width: 160px; margin: 6px 10px; border: 1px solid #eee; display: block; overflow: hidden; }
+.index_sellers .sellerList .sellerItem { width: 180px; margin: 6px 5px; border: 1px solid #eee; display: block; overflow: hidden; }
 
 .index_sellers .sellerList .sellerItem .name { font-size: 14px; line-height: 2; border-bottom: 1px solid #eee; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0px 10px; color: #666; }
 
 .index_sellers .sellerList .sellerItem .tel { text-align: center; font-size: 12px; line-height: 2; color: #999; }
 
-.index_sellers .sellerList .sellerItem .other { padding: 0px 5px; white-space: nowrap; overflow: hidden; }
+.index_sellers .sellerList .sellerItem .other { padding: 0px 2px; white-space: nowrap; overflow: hidden; }
 
 .index_sellers .sellerList .sellerItem .other span { display: inline-block; color: #999; }
 
-.index_sellers .sellerList .sellerItem .other span.count { font-size: 12px; }
+.index_sellers .sellerList .sellerItem .other span.count { font-size: 12px; float: left; }
 
 .index_sellers .sellerList .sellerItem .other span.count em { font-style: normal; color: #f60; }
+
+.index_sellers .sellerList .sellerItem .other span.address { float: right; }
 
 .index_sellers .sellerList .sellerItem:hover { border-color: #f60; }
 

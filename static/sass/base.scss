@@ -116,14 +116,14 @@ ul{
 }
 /* logo and search start */
 .logo_search{
-  height: 50px;
+  height: 42px;
   padding: 1px 0px;
   margin: 0 auto;
   background-color: #fff;
   .mainLogo{
     float: left;
     height: 40px;
-    margin: 6px 0px;
+    margin: 1px 0px;
     width: 25%;
     img{
       height: 40px;
@@ -155,7 +155,7 @@ ul{
       border: 1px solid #f60;
       color: #f60;
       display: inline-block;
-      margin: 10px;
+      margin: 6px;
       position: relative;
       vertical-align: middle;
       border-radius: 3px;
@@ -190,7 +190,7 @@ ul{
     float: left;
     width: 25%;
     text-align: right;
-    padding-top: 10px;
+    padding-top: 6px;
     .buyItem{
       border: 1px solid #f60;
       display: inline-block;
@@ -392,21 +392,21 @@ ul{
           border-bottom: 1px solid #eee;
           color: #666;
           position: relative;
-          img{
-            width: 50px;
+          .ci_img{
+            width: 100px;
+            text-align: center;
             height: 50px;
+            display: inline-block;
             margin-top: 3px;
-            vertical-align: top;
             margin-right: 10px;
+            img{
+              vertical-align: top;
+              height: 50px;
+              max-width: 100px;
+            }
           }
           &.active{
             background-color: rgba(184, 202, 216, .6);
-            &::after{
-              content: ">";
-              position: absolute;
-              right: 10px;
-              line-height: 56px;
-            }
           }
         }
         .newClass{
@@ -654,7 +654,7 @@ ul{
 /* 入驻商家 start */
 .index_sellers{
   float: right;
-  width: 180px;
+  width: 190px;
   background-color: #fff;
   .flag{
     height: 40px;
@@ -667,8 +667,8 @@ ul{
   .sellerList{
     height: 942px;
     .sellerItem{
-      width: 160px;
-      margin:6px 10px;
+      width: 180px;
+      margin:6px 5px;
       border: 1px solid #eee;
       display: block;
       overflow: hidden;
@@ -689,7 +689,7 @@ ul{
         color: #999;
       }
       .other{
-        padding: 0px 5px;
+        padding: 0px 2px;
         white-space: nowrap;
         overflow: hidden;
         //text-overflow: ellipsis;
@@ -698,10 +698,14 @@ ul{
           color: #999;
           &.count{
             font-size: 12px;
+            float: left;
             em{
               font-style: normal;
               color: #f60;
             }
+          }
+          &.address{
+            float: right;
           }
         }
       }
