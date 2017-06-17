@@ -846,4 +846,6 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .dopay .countMoney em { font-size: 30px; font-style: normal; color: #f60; }
 
+.gongsijieshao { width: 970px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10px; border: 1px solid #eee; height: 200px; resize: none; border-radius: 5px; }
+
 /*管理端界面 end*/
