@@ -149,47 +149,51 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 /* 左右结构 start */
 .leftContent { width: 1000px; float: left; }
 
-.leftContent .classBox { background-color: #fff; clear: both; overflow: hidden; }
+.classBox { background-color: #fff; clear: both; overflow: hidden; }
 
-.leftContent .classBox .firstClass { float: left; width: 200px; }
+.classBox .firstClass { float: left; width: 200px; }
 
-.leftContent .classBox .firstClass .flag { height: 40px; line-height: 40px; text-align: center; color: #fff; font-size: 20px; background-color: #72b1e4; }
+.classBox .firstClass .flag { height: 40px; line-height: 40px; text-align: center; color: #fff; font-size: 20px; background-color: #72b1e4; }
 
-.leftContent .classBox .firstClass .classList { width: 200px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.classBox .firstClass .classList { width: 200px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-.leftContent .classBox .firstClass .classList li { position: relative; }
+.classBox .firstClass .classList li { position: relative; }
 
-.leftContent .classBox .firstClass .classList li:hover { background-color: rgba(184, 202, 216, 0.6); }
+.classBox .firstClass .classList li:hover { background-color: rgba(184, 202, 216, 0.6); }
 
-.leftContent .classBox .firstClass .classList li:hover .innerChooseBox { display: block; }
+.classBox .firstClass .classList li:hover .innerChooseBox { display: block; }
 
-.leftContent .classBox .firstClass .classList .classItem { display: block; height: 56px; line-height: 56px; padding-left: 5px; font-size: 16px; border-bottom: 1px solid #eee; color: #666; position: relative; text-align: center; }
+.classBox .firstClass .classList .classItem { display: block; height: 56px; line-height: 56px; padding-left: 5px; font-size: 16px; border-bottom: 1px solid #eee; color: #666; position: relative; text-align: center; }
 
-.leftContent .classBox .firstClass .classList .classItem .ci_img { text-align: center; height: 50px; display: inline-block; margin-top: 3px; margin-right: 10px; }
+.classBox .firstClass .classList .classItem .ci_img { text-align: center; height: 50px; display: inline-block; margin-top: 3px; margin-right: 10px; }
 
-.leftContent .classBox .firstClass .classList .classItem .ci_img img { vertical-align: top; height: 50px; max-width: 100px; }
+.classBox .firstClass .classList .classItem .ci_img img { vertical-align: top; height: 50px; max-width: 100px; }
 
-.leftContent .classBox .firstClass .classList .classItem.active { background-color: rgba(184, 202, 216, 0.6); }
+.classBox .firstClass .classList .classItem.active { background-color: rgba(184, 202, 216, 0.6); }
 
-.leftContent .classBox .firstClass .classList .newClass { height: 50px; line-height: 50px; width: 90%; margin: 10px auto; color: #fff; background-color: #f60; text-align: center; display: block; border-radius: 5px; font-size: 18px; }
+.classBox .firstClass .classList .newClass { height: 50px; line-height: 50px; width: 90%; margin: 10px auto; color: #fff; background-color: #f60; text-align: center; display: block; border-radius: 5px; font-size: 18px; }
 
-.leftContent .classBox .firstClass .classList .newClass:hover { background-color: #f90; }
+.classBox .firstClass .classList .newClass:hover { background-color: #f90; }
 
-.leftContent .classBox .secondClass { width: 780px; padding: 10px; min-height: 642px; border-top: 1px solid #72b1e4; float: left; }
+.classBox .secondClass { width: 780px; padding: 10px; min-height: 642px; border-top: 1px solid #72b1e4; float: left; }
 
-.leftContent .classBox .secondClass .childItem { width: 153px; height: 160px; border: 1px solid #b8cad8; float: left; margin-right: 1px; margin-bottom: 1px; }
+.classBox .secondClass .childItem { width: 153px; height: 160px; border: 1px solid #b8cad8; float: left; margin-right: 1px; margin-bottom: 1px; }
 
-.leftContent .classBox .secondClass .childItem .childImg { width: 153px; height: 130px; clear: both; overflow: hidden; }
+.classBox .secondClass .childItem .childImg { width: 153px; height: 130px; clear: both; overflow: hidden; }
 
-.leftContent .classBox .secondClass .childItem .childImg img { width: 100%; }
+.classBox .secondClass .childItem .childImg img { width: 100%; }
 
-.leftContent .classBox .secondClass .childItem .childName { background-color: #b8cad8; text-align: center; height: 30px; line-height: 30px; color: #fff; font-size: 14px; }
+.classBox .secondClass .childItem .childName { background-color: #b8cad8; text-align: center; height: 30px; line-height: 30px; color: #fff; font-size: 14px; }
 
-.leftContent .classBox .secondClass .childItem.active, .leftContent .classBox .secondClass .childItem:hover { border-color: #72b1e4; }
+.classBox .secondClass .childItem.active, .classBox .secondClass .childItem:hover { border-color: #72b1e4; }
 
-.leftContent .classBox .secondClass .childItem.active .childName, .leftContent .classBox .secondClass .childItem:hover .childName { background-color: #72b1e4; }
+.classBox .secondClass .childItem.active .childName, .classBox .secondClass .childItem:hover .childName { background-color: #72b1e4; }
 
-.leftContent .classBox .secondClass.innerChooseBox { position: absolute; z-index: 10; background-color: #fff; display: none; left: 200px; top: 0px; -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); }
+.classBox .secondClass .childItem label { width: 100%; border: none; }
+
+.classBox .secondClass.innerChooseBox { position: absolute; z-index: 10; background-color: #fff; display: none; left: 200px; top: 0px; -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); }
+
+.classBox .secondClass.cho { padding: 10px 2px; border: 1px solid #eee; min-height: 588px; }
 
 /* 左右结构 end */
 /* 询价表哥 start */
@@ -725,6 +729,10 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 .ap_list .ap_item .ap_c_a .a { float: right; color: #999; }
 
 .ap_list .ap_item:hover { border-color: #f60; -webkit-box-shadow: 0px 5px 5px rgba(100, 100, 100, 0.5); box-shadow: 0px 5px 5px rgba(100, 100, 100, 0.5); }
+
+.ap_list .ap_item.cho { height: 355px; }
+
+.ap_list .ap_item.cho .chooseThis { border: none; clear: both; width: 100%; height: 30px; line-height: 30px; text-align: center; background-color: #f8f8f8; }
 
 /* 编辑 */
 .edit { clear: both; overflow: hidden; }

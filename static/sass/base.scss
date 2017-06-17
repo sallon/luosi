@@ -399,126 +399,134 @@ ul{
 .leftContent{
   width: 1000px;
   float: left;
-  .classBox{
-    background-color: #fff;
-    clear: both;
-    overflow: hidden;
-    .firstClass{
-      float: left;
-      width: 200px;
-      .flag{
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        color: #fff;
-        font-size: 20px;
-        background-color: $baseColor;
-      }
-      .classList{
-        width: 200px;
-        box-sizing: border-box;
-        li{
-          position: relative;
-          &:hover{
-            background-color: rgba(184, 202, 216, 0.6);
-            .innerChooseBox{
-              display: block;
-            }
-          }
-        }
-        .classItem{
-          display: block;
-          height: 56px;
-          line-height: 56px;
-          padding-left: 5px;
-          font-size: 16px;
-          border-bottom: 1px solid #eee;
-          color: #666;
-          position: relative;
-          text-align: center;
-          .ci_img{
-            //width: 100px;
-            text-align: center;
-            height: 50px;
-            display: inline-block;
-            margin-top: 3px;
-            margin-right: 10px;
-            img{
-              vertical-align: top;
-              height: 50px;
-              max-width: 100px;
-            }
-          }
-          &.active{
-            background-color: rgba(184, 202, 216, .6);
-          }
-        }
-        .newClass{
-          height: 50px;
-          line-height: 50px;
-          width: 90%;
-          margin: 10px auto;
-          color: #fff;
-          background-color: #f60;
-          text-align: center;
-          display: block;
-          border-radius: 5px;
-          font-size: 18px;
-          &:hover{
-            background-color: #f90;
-          }
-        }
-      }
+}
+.classBox{
+  background-color: #fff;
+  clear: both;
+  overflow: hidden;
+  .firstClass{
+    float: left;
+    width: 200px;
+    .flag{
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      background-color: $baseColor;
     }
-    .secondClass{
-      width: 780px;
-      padding: 10px;
-      min-height: 642px;
-      border-top:1px solid $baseColor;
-      float: left;
-      .childItem{
-        width: 153px;
-        height: 160px;
-        border: 1px solid #b8cad8;
-        float: left;
-        margin-right: 1px;
-        margin-bottom: 1px;
-        .childImg{
-          width: 153px;
-          height: 130px;
-          clear: both;
-          overflow: hidden;
-          img{
-            width: 100%;
-          }
-        }
-        .childName{
-          background-color: #b8cad8;
-          text-align: center;
-          height: 30px;
-          line-height: 30px;
-          color: #fff;
-          font-size: 14px;
-        }
-        &.active,&:hover{
-          border-color: $baseColor;
-          .childName{
-            background-color: $baseColor;
+    .classList{
+      width: 200px;
+      box-sizing: border-box;
+      li{
+        position: relative;
+        &:hover{
+          background-color: rgba(184, 202, 216, 0.6);
+          .innerChooseBox{
+            display: block;
           }
         }
       }
-      &.innerChooseBox{
-        position: absolute;
-        z-index: 10;
-        background-color: #fff;
-        display: none;
-        left: 200px;
-        top:0px;
-        box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+      .classItem{
+        display: block;
+        height: 56px;
+        line-height: 56px;
+        padding-left: 5px;
+        font-size: 16px;
+        border-bottom: 1px solid #eee;
+        color: #666;
+        position: relative;
+        text-align: center;
+        .ci_img{
+          //width: 100px;
+          text-align: center;
+          height: 50px;
+          display: inline-block;
+          margin-top: 3px;
+          margin-right: 10px;
+          img{
+            vertical-align: top;
+            height: 50px;
+            max-width: 100px;
+          }
+        }
+        &.active{
+          background-color: rgba(184, 202, 216, .6);
+        }
+      }
+      .newClass{
+        height: 50px;
+        line-height: 50px;
+        width: 90%;
+        margin: 10px auto;
+        color: #fff;
+        background-color: #f60;
+        text-align: center;
+        display: block;
+        border-radius: 5px;
+        font-size: 18px;
+        &:hover{
+          background-color: #f90;
+        }
       }
     }
   }
-
+  .secondClass{
+    width: 780px;
+    padding: 10px;
+    min-height: 642px;
+    border-top:1px solid $baseColor;
+    float: left;
+    .childItem{
+      width: 153px;
+      height: 160px;
+      border: 1px solid #b8cad8;
+      float: left;
+      margin-right: 1px;
+      margin-bottom: 1px;
+      .childImg{
+        width: 153px;
+        height: 130px;
+        clear: both;
+        overflow: hidden;
+        img{
+          width: 100%;
+        }
+      }
+      .childName{
+        background-color: #b8cad8;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        font-size: 14px;
+      }
+      &.active,&:hover{
+        border-color: $baseColor;
+        .childName{
+          background-color: $baseColor;
+        }
+      }
+      & label{
+        width: 100%;
+        border: none;
+      }
+    }
+    &.innerChooseBox{
+      position: absolute;
+      z-index: 10;
+      background-color: #fff;
+      display: none;
+      left: 200px;
+      top:0px;
+      box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    }
+    &.cho{
+      padding: 10px 2px;
+      border: 1px solid #eee;
+      min-height: 588px;
+    }
+  }
 }
 /* 左右结构 end */
 /* 询价表哥 start */
