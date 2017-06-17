@@ -204,6 +204,8 @@
         line-height: 40px;
         width: 180px;
         margin: 20px 20px;
+        border: 1px solid #f90;
+        outline: none;
         &.normal{
             background-color: #f90;
             &:hover{
@@ -309,4 +311,183 @@
         }
     }
 }
-/**/
+/* 编辑 */
+.edit{
+    clear: both;
+    overflow: hidden;
+    .leftEdit{
+        float: left;
+        width: 700px;
+        .a_formItem{
+            clear: both;
+            overflow: hidden;
+            height: 40px;
+            line-height: 40px;
+            margin-bottom: 5px;
+            span{
+                display: inline-block;
+                width: 80px;
+                font-size: 14px;
+            }
+            input[type="text"]{
+                height: 25px;
+                line-height: 25px;
+                padding: 0px 10px;
+                outline: none;
+                width: 420px;
+            }
+            label{
+                display: inline-block;
+                text-align: left;
+                float: none;
+                width: auto;
+                margin: 0px;
+                line-height: 30px;
+                padding: 0px 10px;
+                input[type="text"]{
+                    width: 120px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+    .rightShow{
+        width: 250px;
+        float: left;
+        .ap_item{
+            width: 220px;
+            border: 1px solid #eee;
+            .ap_img{
+                width: 220px;
+                height: 220px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+            }
+            .ap_mc{
+                height: 30px;
+                line-height: 30px;
+                padding: 0px 10px;
+                .m{
+                    float: left;
+                    font-size: 20px;
+                    color: $orange;
+                }
+                .c{
+                    color: #999;
+                    float: right;
+                }
+            }
+            .ap_name{
+                padding: 0px 10px;
+                font-size: 12px;
+                em{
+                    font-style: normal;
+                    color: $orange;
+                    line-height: 2;
+                }
+            }
+            .ap_c_a{
+                line-height: 2;
+                color: #999;
+                clear: both;
+                overflow: hidden;
+                padding: 0px 10px;
+                .c{float: left}
+                .a{
+                    float: right;
+                }
+            }
+        }
+    }
+}
+.chooseImgBox{
+    border: 1px solid #eee;
+    width: 954px;
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    padding: 0px 10px;
+    height: 40px;
+    line-height: 40px;
+    .chooseTip{
+        float: left;
+        font-size: 24px;
+        color: $baseColor;
+        em{
+            font-style: normal;
+            margin: 0px 10px;
+            color: $orange;
+        }
+    }
+    .inputForm{
+        float: left;
+        margin-left: 10px;
+        input{
+            height: 32px;
+            line-height: 28px;
+            font-size: 14px;
+            padding: 0px;
+            vertical-align: top;
+            margin-top: 5px;
+        }
+    }
+}
+.systemImgList{
+    clear: both;
+    overflow: hidden;
+    padding: 0px 40px;
+    position: relative;
+    border: 1px solid #eee;
+    margin-top: -1px;
+    width: 894px;
+    .leftP,.rightP{
+        position: absolute;
+        height: 250px;
+        width: 40px;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        font-size: 30px;
+        color: $baseColor;
+        &:hover{
+            background-color: $baseColor;
+            color: $orange;
+        }
+    }
+    .leftP{
+        left: 0px;
+    }
+    .rightP{
+        right: 0px;
+    }
+    .innerbox{
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+        .imgLi{
+            position: absolute;
+            left: 0px;
+            top:0px;
+            label{
+                width: 285px;
+                margin-right: 15px;
+                float: left;
+                overflow: hidden;
+                margin-top: 3px;
+                .img{
+                    width: 286px;
+                    height: 220px;
+                    text-align: center;
+                    img{
+                        width: 100%;
+                        max-height: 220px;
+                    }
+                }
+            }
+        }
+    }
+}

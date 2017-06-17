@@ -176,46 +176,170 @@
             <div class="ac_top">您有以下产品使用平台默认数据，请选择完善</div>
             <div class="ac_content clearAll">
                 <!-- 内容区域 start -->
-                <div class="edit">
-                    <div class="leftEdit">
-                        <div class="a_formItem">
-                            <span>件号：</span>
-                            <input type="text">
+                <form action="">
+                    <div class="edit">
+                        <div class="leftEdit">
+                            <div class="a_formItem">
+                                <span>件号：</span>
+                                <input type="text">
+                            </div>
+                            <div class="a_formItem">
+                                <span>入住日期：</span>
+                                <input type="text">
+                            </div>
+                            <div class="a_formItem">
+                                <span>价格：</span>
+                                <input type="text">
+                            </div>
+                            <div class="a_formItem">
+                                <span>材料：</span>
+                                <label>
+                                    <input type="radio">钢铁
+                                </label>
+                                <label>
+                                    <input type="radio">不锈钢
+                                </label>
+                                <label>
+                                    <input type="radio">铜
+                                </label>
+                                <label>
+                                    <input type="radio">其他 <input type="text">
+                                </label>
+                            </div>
+                            <div class="a_formItem">
+                                <span>强度：</span>
+                                <label>
+                                    <input type="radio">5.8
+                                </label>
+                                <label>
+                                    <input type="radio">8.8
+                                </label>
+                                <label>
+                                    <input type="radio">10.9
+                                </label>
+                                <label>
+                                    <input type="radio">12.3
+                                </label>
+                                <label>
+                                    <input type="radio">其他 <input type="text">
+                                </label>
+                            </div>
+                            <div class="a_formItem">
+                                <span>表面处理：</span>
+                                <label>
+                                    <input type="radio">镀锌
+                                </label>
+                                <label>
+                                    <input type="radio">发黑
+                                </label>
+                                <label>
+                                    <input type="radio">磷化
+                                </label>
+                                <label>
+                                    <input type="radio">本色
+                                </label>
+                                <label>
+                                    <input type="radio">其他 <input type="text">
+                                </label>
+                            </div>
+                            <div class="a_formItem">
+                                <span>其他备注：</span>
+                                <input type="text">
+                            </div>
                         </div>
-                        <div class="a_formItem">
-                            <span>入住日期：</span>
-                            <input type="text">
-                        </div>
-                        <div class="a_formItem">
-                            <span>价格：</span>
-                            <input type="text">
-                        </div>
-                        <div class="a_formItem">
-                            <span>件号：</span>
-                            <label>
-
-                            </label>
+                        <div class="rightShow">
+                            <div class="ap_item">
+                                <div class="ap_img">
+                                    <img src="../static/images/examples/seller.jpg" alt="">
+                                </div>
+                                <div class="ap_mc">
+                                    <span class="m">¥2.00</span>
+                                    <span class="c">36人付款</span>
+                                </div>
+                                <div class="ap_name">
+                                    <em>DIN933</em>加长六角 <em>螺栓</em>304不锈钢螺钉外六角螺丝M8*12／16／20／25-150
+                                </div>
+                                <div class="ap_c_a">
+                                    <span class="c"><i class="iconfont icon-maijia1"></i>汇成丰旗舰店</span>
+                                    <span class="a">广东  深圳</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="rightShow">
-                        <div class="ap_item">
-                            <div class="ap_img">
-                                <img src="../static/images/examples/seller.jpg" alt="">
-                            </div>
-                            <div class="ap_mc">
-                                <span class="m">¥2.00</span>
-                                <span class="c">36人付款</span>
-                            </div>
-                            <div class="ap_name">
-                                <em>DIN933</em>加长六角 <em>螺栓</em>304不锈钢螺钉外六角螺丝M8*12／16／20／25-150
-                            </div>
-                            <div class="ap_c_a">
-                                <span class="c"><i class="iconfont icon-maijia1"></i>汇成丰旗舰店</span>
-                                <span class="a">广东  深圳</span>
+                    <div class="chooseImgBox clearAll">
+                        <div class="chooseTip">选择系统默认图片 <em>或</em>上传自己的图片</div>
+                        <div class="inputForm">
+                            <input type="file">
+                        </div>
+                    </div>
+                    <div class="systemImgList">
+                        <a href="javascript:void(0);" class="leftP"><i class="iconfont icon-left"></i></a>
+                        <a href="javascript:void(0);" class="rightP"><i class="iconfont icon-right"></i></a>
+                        <div class="innerbox" id="imglist">
+                            <div class="imgLi">
+                                <label>
+                                    <div class="img">
+                                        <img src="../static/images/examples/sys1.png" alt="">
+                                    </div>
+                                    <input type="radio">选我做图片
+                                </label>
+                                <label>
+                                    <div class="img">
+                                        <img src="../static/images/examples/sys1.png" alt="">
+                                    </div>
+                                    <input type="radio">选我做图片
+                                </label>
+                                <label>
+                                    <div class="img">
+                                        <img src="../static/images/examples/sys1.png" alt="">
+                                    </div>
+                                    <input type="radio">选我做图片
+                                </label>
+                                <label>
+                                    <div class="img">
+                                        <img src="../static/images/examples/sys1.png" alt="">
+                                    </div>
+                                    <input type="radio">选我做图片
+                                </label>
+                                <label>
+                                    <div class="img">
+                                        <img src="../static/images/examples/sys1.png" alt="">
+                                    </div>
+                                    <input type="radio">选我做图片
+                                </label>
+                                <label>
+                                    <div class="img">
+                                        <img src="../static/images/examples/sys1.png" alt="">
+                                    </div>
+                                    <input type="radio">选我做图片
+                                </label>
+                                <label>
+                                    <div class="img">
+                                        <img src="../static/images/examples/sys1.png" alt="">
+                                    </div>
+                                    <input type="radio">选我做图片
+                                </label>
+                                <label>
+                                    <div class="img">
+                                        <img src="../static/images/examples/sys1.png" alt="">
+                                    </div>
+                                    <input type="radio">选我做图片
+                                </label>
+                                <label>
+                                    <div class="img">
+                                        <img src="../static/images/examples/sys1.png" alt="">
+                                    </div>
+                                    <input type="radio">选我做图片
+                                </label>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <!--三个居中的按钮 start-->
+                    <div class="btnBox clearAll">
+                        <input type="submit" class="btn normal" value="提交">
+                    </div>
+                    <!--三个居中的按钮 end-->
+                </form>
                 <!-- 内容区域 end -->
             </div>
             <div class="a_footer">
@@ -225,6 +349,44 @@
             </div>
         </div>
     </div>
+
+    <script src="../static/js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            var imgs = $("#imglist").find("label");
+            var al = 285 * (imgs.length+1);
+            $(".imgLi").css("width",al);
+            $(".leftP").on("click",function(){
+                var l = $(".imgLi").data("left");
+                if(!l){
+                    l=0;
+                }
+                l -= 285*3;
+                l = l - 50;
+                console.log( al-285*3);
+                if(Math.abs(l) >= al-285*3){
+                    alert("没有了！")
+                }else{
+                    $(".imgLi").css("left",l+"px");
+                    $(".imgLi").data("left",l);
+                }
+            })
+            $(".rightP").on("click",function(){
+                var l = $(".imgLi").data("left");
+                if(!l){
+                    l=0;
+                }
+                l += 285*3;
+                l += 50;
+                if(l>0){
+                    alert("在第一页了！")
+                }else{
+                    $(".imgLi").css("left",l+"px");
+                    $(".imgLi").data("left",l);
+                }
+            })
+        })
+    </script>
 
 </body>
 </html>

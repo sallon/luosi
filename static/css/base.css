@@ -688,7 +688,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .btnBox { text-align: center; }
 
-.btnBox .btn { font-size: 16px; color: #fff; display: inline-block; height: 40px; line-height: 40px; width: 180px; margin: 20px 20px; }
+.btnBox .btn { font-size: 16px; color: #fff; display: inline-block; height: 40px; line-height: 40px; width: 180px; margin: 20px 20px; border: 1px solid #f90; outline: none; }
 
 .btnBox .btn.normal { background-color: #f90; }
 
@@ -726,5 +726,73 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .ap_list .ap_item:hover { border-color: #f60; -webkit-box-shadow: 0px 5px 5px rgba(100, 100, 100, 0.5); box-shadow: 0px 5px 5px rgba(100, 100, 100, 0.5); }
 
-/**/
+/* 编辑 */
+.edit { clear: both; overflow: hidden; }
+
+.edit .leftEdit { float: left; width: 700px; }
+
+.edit .leftEdit .a_formItem { clear: both; overflow: hidden; height: 40px; line-height: 40px; margin-bottom: 5px; }
+
+.edit .leftEdit .a_formItem span { display: inline-block; width: 80px; font-size: 14px; }
+
+.edit .leftEdit .a_formItem input[type="text"] { height: 25px; line-height: 25px; padding: 0px 10px; outline: none; width: 420px; }
+
+.edit .leftEdit .a_formItem label { display: inline-block; text-align: left; float: none; width: auto; margin: 0px; line-height: 30px; padding: 0px 10px; }
+
+.edit .leftEdit .a_formItem label input[type="text"] { width: 120px; height: 16px; }
+
+.edit .rightShow { width: 250px; float: left; }
+
+.edit .rightShow .ap_item { width: 220px; border: 1px solid #eee; }
+
+.edit .rightShow .ap_item .ap_img { width: 220px; height: 220px; overflow: hidden; }
+
+.edit .rightShow .ap_item .ap_img img { width: 100%; }
+
+.edit .rightShow .ap_item .ap_mc { height: 30px; line-height: 30px; padding: 0px 10px; }
+
+.edit .rightShow .ap_item .ap_mc .m { float: left; font-size: 20px; color: #f60; }
+
+.edit .rightShow .ap_item .ap_mc .c { color: #999; float: right; }
+
+.edit .rightShow .ap_item .ap_name { padding: 0px 10px; font-size: 12px; }
+
+.edit .rightShow .ap_item .ap_name em { font-style: normal; color: #f60; line-height: 2; }
+
+.edit .rightShow .ap_item .ap_c_a { line-height: 2; color: #999; clear: both; overflow: hidden; padding: 0px 10px; }
+
+.edit .rightShow .ap_item .ap_c_a .c { float: left; }
+
+.edit .rightShow .ap_item .ap_c_a .a { float: right; }
+
+.chooseImgBox { border: 1px solid #eee; width: 954px; margin-top: 20px; background-color: #f8f8f8; padding: 0px 10px; height: 40px; line-height: 40px; }
+
+.chooseImgBox .chooseTip { float: left; font-size: 24px; color: #72b1e4; }
+
+.chooseImgBox .chooseTip em { font-style: normal; margin: 0px 10px; color: #f60; }
+
+.chooseImgBox .inputForm { float: left; margin-left: 10px; }
+
+.chooseImgBox .inputForm input { height: 32px; line-height: 28px; font-size: 14px; padding: 0px; vertical-align: top; margin-top: 5px; }
+
+.systemImgList { clear: both; overflow: hidden; padding: 0px 40px; position: relative; border: 1px solid #eee; margin-top: -1px; width: 894px; }
+
+.systemImgList .leftP, .systemImgList .rightP { position: absolute; height: 250px; width: 40px; background-color: #f8f8f8; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-orient: vertical; -webkit-box-direction: normal; -moz-box-orient: vertical; -moz-box-direction: normal; -ms-flex-direction: column; flex-direction: column; text-align: center; font-size: 30px; color: #72b1e4; }
+
+.systemImgList .leftP:hover, .systemImgList .rightP:hover { background-color: #72b1e4; color: #f60; }
+
+.systemImgList .leftP { left: 0px; }
+
+.systemImgList .rightP { right: 0px; }
+
+.systemImgList .innerbox { width: 100%; height: 250px; overflow: hidden; position: relative; }
+
+.systemImgList .innerbox .imgLi { position: absolute; left: 0px; top: 0px; }
+
+.systemImgList .innerbox .imgLi label { width: 285px; margin-right: 15px; float: left; overflow: hidden; margin-top: 3px; }
+
+.systemImgList .innerbox .imgLi label .img { width: 286px; height: 220px; text-align: center; }
+
+.systemImgList .innerbox .imgLi label .img img { width: 100%; max-height: 220px; }
+
 /*管理端界面 end*/
