@@ -293,7 +293,7 @@
             $(".tan .tabItem").each(function(i){
                 $(this).on("mouseover",function(){
                     $(".tan_con").hide();
-                    $("#con-"+i).show();
+                    $("#con-"+(i+1)).show();
                     $(this).parent().find(".tabItem").removeClass("active");
                     $(this).addClass("active");
                 })
