@@ -903,6 +903,40 @@ ul{
     }
   }
 }
+.shuoming{
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 10px;
+  span{
+    display: inline-block;
+    padding: 3px 10px;
+    line-height: 20px;
+  }
+  .red{
+    background-color: #f00;
+  }
+  .blue{
+    background-color: #1c82bc;
+  }
+}
+.a_content .ac_content{
+  .benchTable td label{
+    display: inline-block;
+    border: none;
+    width: auto;
+    text-align: left;
+    float: none;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    &.red{
+      background-color: #f00;
+    }
+    &.blue{
+      background-color: #1c82bc;
+    }
+  }
+}
 .tabContent{
   clear: both;
   overflow: hidden;
@@ -969,6 +1003,7 @@ ul{
       }
     }
   }
+
 }
 /* 零件图例 start*/
 .bigContent{

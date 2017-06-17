@@ -347,6 +347,20 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .benchTable td:first-child { background-color: rgba(27, 109, 133, 0.5); }
 
+.shuoming { height: 30px; text-align: center; line-height: 30px; margin-top: 10px; }
+
+.shuoming span { display: inline-block; padding: 3px 10px; line-height: 20px; }
+
+.shuoming .red { background-color: #f00; }
+
+.shuoming .blue { background-color: #1c82bc; }
+
+.a_content .ac_content .benchTable td label { display: inline-block; border: none; width: auto; text-align: left; float: none; margin-bottom: 0px; padding-right: 10px; }
+
+.a_content .ac_content .benchTable td label.red { background-color: #f00; }
+
+.a_content .ac_content .benchTable td label.blue { background-color: #1c82bc; }
+
 .tabContent { clear: both; overflow: hidden; padding: 10px; }
 
 .tabContent .binTable { width: 100%; border: 1px solid #eee; }
@@ -802,5 +816,34 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 .systemImgList .innerbox .imgLi label .img { width: 286px; height: 220px; text-align: center; }
 
 .systemImgList .innerbox .imgLi label .img img { width: 100%; max-height: 220px; }
+
+/*付费模块*/
+.payment { padding: 0px 100px; }
+
+.payment .p_item { height: 30px; line-height: 30px; margin-bottom: 10px; font-size: 16px; }
+
+.payment .p_item span:first-child { display: inline-block; width: 80px; }
+
+.payment .p_item input { height: 30px; border: 1px solid #eee; padding: 0px 10px; font-size: 16px; color: #f60; }
+
+.payment .p_item .danwei { color: #72b1e4; }
+
+.payment .p_item .danwei em { font-style: normal; color: #ff0000; font-size: 14px; }
+
+.dopay { clear: both; overflow: hidden; border: 1px solid #eee; width: 954px; padding: 0px 10px; margin: 30px 0px; }
+
+.dopay .head { text-align: center; font-size: 20px; height: 40px; line-height: 40px; font-weight: bold; color: #999; }
+
+.dopay .code { clear: both; overflow: hidden; }
+
+.dopay .code .halfCode { width: 50%; text-align: center; float: left; }
+
+.dopay .code .halfCode .codeBox { display: inline-block; width: 150px; height: 150px; overflow: hidden; border: 1px solid #eee; border-radius: 3px; padding: 5px; }
+
+.dopay .code .halfCode .codeBox img { width: 100%; }
+
+.dopay .countMoney { height: 50px; line-height: 50px; text-align: center; font-size: 20px; }
+
+.dopay .countMoney em { font-size: 30px; font-style: normal; color: #f60; }
 
 /*管理端界面 end*/
