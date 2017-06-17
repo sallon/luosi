@@ -589,3 +589,20 @@
     resize: none;
     border-radius: 5px;
 }
+.c_tip{
+    padding: 10px;
+    width: 947px;
+    border: 1px solid #ee5d48;
+    font-size: 20px;
+    color: $orange;
+    background-color: rgba(238,93,72,0.2);
+}
+.editTable{
+    .product{
+        width: 969px;
+        margin-top: 20px;
+        .table_input{
+            width: 200px;
+        }
+    }
+}

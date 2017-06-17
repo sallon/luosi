@@ -530,19 +530,19 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .company .rightPart .model .body p { text-indent: 2em; }
 
-.company .rightPart .product { border: 1px solid #eee; border-collapse: collapse; }
+.product { border: 1px solid #eee; border-collapse: collapse; }
 
-.company .rightPart .product tr:nth-child(2n) { background-color: #f9f9f9; }
+.product tr:nth-child(2n) { background-color: #f9f9f9; }
 
-.company .rightPart .product td { border-bottom: 1px solid #eee; padding: 5px 10px; }
+.product td { border-bottom: 1px solid #eee; padding: 5px 10px; }
 
-.company .rightPart .product td:nth-child(2n-1) { width: 150px; background-color: #f8f8f8; }
+.product td:nth-child(2n-1) { width: 150px; background-color: #f8f8f8; }
 
-.company .rightPart .product td:nth-child(2n) { width: 299px; }
+.product td:nth-child(2n) { width: 299px; }
 
-.company .rightPart .product .fl { float: left; }
+.product .fl { float: left; }
 
-.company .rightPart .product .fr { float: right; }
+.product .fr { float: right; }
 
 .partner { background-color: #fff; border: 1px solid #eee; }
 
@@ -847,5 +847,11 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 .dopay .countMoney em { font-size: 30px; font-style: normal; color: #f60; }
 
 .gongsijieshao { width: 970px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10px; border: 1px solid #eee; height: 200px; resize: none; border-radius: 5px; }
+
+.c_tip { padding: 10px; width: 947px; border: 1px solid #ee5d48; font-size: 20px; color: #f60; background-color: rgba(238, 93, 72, 0.2); }
+
+.editTable .product { width: 969px; margin-top: 20px; }
+
+.editTable .product .table_input { width: 200px; }
 
 /*管理端界面 end*/

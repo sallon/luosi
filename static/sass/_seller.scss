@@ -197,30 +197,30 @@ $orange:#f60;
         }
       }
     }
-    .product{
-      border: 1px solid #eee;
-      border-collapse: collapse;
-      tr:nth-child(2n){
-        background-color: #f9f9f9;
-      }
-      td{
-        border-bottom: 1px solid #eee;
-        padding: 5px 10px;
-      }
-      td:nth-child(2n-1){
-        width: 150px;
-        background-color: #f8f8f8;
-      }
-      td:nth-child(2n){
-        width: 299px;
-      }
-      .fl{
-        float: left;
-      }
-      .fr{
-        float: right;
-      }
-    }
+  }
+}
+.product{
+  border: 1px solid #eee;
+  border-collapse: collapse;
+  tr:nth-child(2n){
+    background-color: #f9f9f9;
+  }
+  td{
+    border-bottom: 1px solid #eee;
+    padding: 5px 10px;
+  }
+  td:nth-child(2n-1){
+    width: 150px;
+    background-color: #f8f8f8;
+  }
+  td:nth-child(2n){
+    width: 299px;
+  }
+  .fl{
+    float: left;
+  }
+  .fr{
+    float: right;
   }
 }
 .partner{
