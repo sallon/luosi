@@ -706,7 +706,7 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .btnBox { text-align: center; }
 
-.btnBox .btn { font-size: 16px; color: #fff; display: inline-block; height: 40px; line-height: 40px; width: 180px; margin: 20px 20px; border: 1px solid #f90; outline: none; }
+.btnBox .btn { font-size: 16px; color: #fff; display: inline-block; height: 40px; width: 180px; margin: 20px 20px; border: 1px solid #f90; outline: none; }
 
 .btnBox .btn.normal { background-color: #f90; }
 
@@ -853,5 +853,29 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 .editTable .product { width: 969px; margin-top: 20px; }
 
 .editTable .product .table_input { width: 200px; }
+
+.upPhotoBox { padding: 20px 100px; }
+
+.upPhotoBox .u_item { min-height: 40px; line-height: 40px; }
+
+.upPhotoBox .u_item span { font-size: 16px; }
+
+.upPhotoBox .u_item select { border: 1px solid #eee; height: 30px; width: 200px; }
+
+.upPhotoBox .u_item textarea { vertical-align: top; height: 120px; width: 400px; resize: none; border: 1px solid #eee; padding: 10px; }
+
+.showPhotoTab { clear: both; overflow: hidden; width: 973px; border: 1px solid #eee; }
+
+.showPhotoTab .tan { height: 40px; background-color: #f8f8f8; line-height: 40px; clear: both; overflow: hidden; }
+
+.showPhotoTab .tan a { float: left; padding: 0px 10px; background-color: #72b1e4; color: #fff; margin-right: 1px; font-size: 16px; }
+
+.showPhotoTab .tan a.active, .showPhotoTab .tan a:hover { background-color: #f60; }
+
+.showPhotoTab .tan_con { width: 100%; text-align: center; display: none; padding: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.showPhotoTab .tan_con .upImgBox { display: block; clear: both; overflow: hidden; width: 100%; margin-bottom: 20px; }
+
+.showPhotoTab .tan_con .upImgBox img { max-width: 100%; }
 
 /*管理端界面 end*/

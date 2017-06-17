@@ -201,7 +201,7 @@
         color: #fff;
         display: inline-block;
         height: 40px;
-        line-height: 40px;
+        //line-height: 40px;
         width: 180px;
         margin: 20px 20px;
         border: 1px solid #f90;
@@ -603,6 +603,70 @@
         margin-top: 20px;
         .table_input{
             width: 200px;
+        }
+    }
+}
+.upPhotoBox{
+    padding: 20px 100px;
+    .u_item{
+        min-height: 40px;
+        line-height: 40px;
+        span{
+            font-size: 16px;
+        }
+        select{
+            border: 1px solid #eee;
+            height: 30px;
+            width: 200px;
+        }
+        textarea{
+            vertical-align: top;
+            height: 120px;
+            width: 400px;
+            resize: none;
+            border: 1px solid #eee;
+            padding: 10px;
+        }
+    }
+}
+.showPhotoTab{
+    clear: both;
+    overflow: hidden;
+    width: 973px;
+    border: 1px solid #eee;
+    .tan{
+        height: 40px;
+        background-color: #f8f8f8;
+        line-height: 40px;
+        clear: both;
+        overflow: hidden;
+        a{
+            float: left;
+            padding: 0px 10px;
+            background-color: $baseColor;
+            color: #fff;
+            margin-right: 1px;
+            font-size: 16px;
+            &.active,&:hover{
+                background-color: $orange;
+            }
+        }
+    }
+    .tan_con{
+        width: 100%;
+        text-align: center;
+        display: none;
+        padding: 10px;
+        box-sizing: border-box;
+        .upImgBox{
+            display: block;
+            clear: both;
+            overflow: hidden;
+            width: 100%;
+            margin-bottom: 20px;
+            img{
+                max-width: 100%;
+            }
         }
     }
 }
