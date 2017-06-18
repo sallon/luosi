@@ -670,3 +670,63 @@
         }
     }
 }
+.ac_content{
+    width: 983px;
+    box-sizing: border-box;
+    .typeTab{
+        height: 30px;
+        border: 1px solid #eee;
+        line-height: 30px;
+        clear: both;
+        overflow: hidden;
+        a{
+            float: left;
+            padding: 0px 20px;
+            background-color: $baseColor;
+            color: #fff;
+            margin-right: 1px;
+            font-size: 16px;
+            &.active,&:hover{
+                background-color: $orange;
+            }
+        }
+    }
+    .typeContent{
+        color: black;
+        overflow: hidden;
+        .formTab{
+            border: 1px solid #eee;
+            margin-top: -1px;
+            padding: 10px;
+            display: none;
+            .jz_upBox{
+                line-height: 40px;
+                font-size: 20px;
+            }
+            .backShow{
+                padding: 10px;
+                border: 1px solid #eee;
+                box-sizing: border-box;
+                img{
+                    width: 100%;
+                }
+            }
+            .jz_sysItem{
+                margin: 10px 0px;
+                padding: 10px;
+                box-sizing: border-box;
+                border: 1px solid #eee;
+                img{
+                    width: 100%;
+                }
+                &:hover,&.active{
+                    border-color: $orange;
+                }
+                .title{
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

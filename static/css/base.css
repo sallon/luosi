@@ -878,4 +878,30 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .showPhotoTab .tan_con .upImgBox img { max-width: 100%; }
 
+.ac_content { width: 983px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.ac_content .typeTab { height: 30px; border: 1px solid #eee; line-height: 30px; clear: both; overflow: hidden; }
+
+.ac_content .typeTab a { float: left; padding: 0px 20px; background-color: #72b1e4; color: #fff; margin-right: 1px; font-size: 16px; }
+
+.ac_content .typeTab a.active, .ac_content .typeTab a:hover { background-color: #f60; }
+
+.ac_content .typeContent { color: black; overflow: hidden; }
+
+.ac_content .typeContent .formTab { border: 1px solid #eee; margin-top: -1px; padding: 10px; display: none; }
+
+.ac_content .typeContent .formTab .jz_upBox { line-height: 40px; font-size: 20px; }
+
+.ac_content .typeContent .formTab .backShow { padding: 10px; border: 1px solid #eee; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.ac_content .typeContent .formTab .backShow img { width: 100%; }
+
+.ac_content .typeContent .formTab .jz_sysItem { margin: 10px 0px; padding: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #eee; }
+
+.ac_content .typeContent .formTab .jz_sysItem img { width: 100%; }
+
+.ac_content .typeContent .formTab .jz_sysItem:hover, .ac_content .typeContent .formTab .jz_sysItem.active { border-color: #f60; }
+
+.ac_content .typeContent .formTab .jz_sysItem .title { font-size: 20px; line-height: 30px; }
+
 /*管理端界面 end*/
