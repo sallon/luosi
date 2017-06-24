@@ -638,6 +638,72 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .m_pages .count { font-size: 18px; line-height: 40px; }
 
+.customerAddInfo { clear: both; overflow: hidden; }
+
+.customerAddInfo .flag { line-height: 2; font-size: 26px; color: #72b1e4; text-align: center; padding-bottom: 10px; border-bottom: 1px solid #72b1e4; }
+
+.customerAddInfo .tips { padding: 10px; border: 1px solid #f60; margin: 20px 0px; color: #f60; font-size: 18px; line-height: 2; }
+
+.customerAddInfo .st_item { padding-left: 100px; line-height: 40px; margin-bottom: 10px; }
+
+.customerAddInfo .st_item span { font-size: 16px; vertical-align: top; display: inline-block; width: 90px; }
+
+.customerAddInfo .st_item input { border: 1px solid #eee; height: 30px; padding: 0px 10px; width: 450px; }
+
+.customerAddInfo .st_item textarea { border: 1px solid #eee; padding: 10px; resize: none; width: 450px; height: 200px; }
+
+.brandList { width: 760px; padding-right: 10px; float: left; }
+
+.brandList .brandItem { border: 1px solid #eee; padding: 10px; clear: both; overflow: hidden; margin-bottom: 10px; position: relative; padding-bottom: 40px; }
+
+.brandList .brandItem .textInfo { float: left; width: 300px; font-size: 12px; }
+
+.brandList .brandItem .textInfo .name { font-size: 16px; line-height: 2; }
+
+.brandList .brandItem .textInfo .item { clear: both; overflow: hidden; color: #999; line-height: 1.5; }
+
+.brandList .brandItem .textInfo .item .textfag { float: left; width: 90px; }
+
+.brandList .brandItem .textInfo .item .textoo { float: left; width: 210px; }
+
+.brandList .brandItem .imgBox { float: left; width: 190px; margin-left: 10px; overflow: hidden; }
+
+.brandList .brandItem .imgBox img { width: 190px; }
+
+.brandList .brandItem .tools { width: 40px; position: absolute; right: 0px; height: 100%; border: 1px solid #eee; margin: -1px; top: 0px; text-align: center; }
+
+.brandList .brandItem .tools .tool { width: 30px; display: inline-block; font-size: 15px; background-color: #72b1e4; color: #fff; text-align: center; margin: 5px 0px; padding: 3px 1px; }
+
+.brandList .brandItem .tools .tool:hover { background-color: #f60; }
+
+.brandList .brandItem .brandTabs { clear: both; overflow: hidden; display: table; width: 760px; position: absolute; z-index: 2; bottom: 0px; left: 0px; }
+
+.brandList .brandItem .brandTabs span { display: table-cell; text-align: center; height: 40px; line-height: 40px; background-color: #f8f8f8; font-size: 14px; color: #72b1e4; }
+
+.brandList .brandItem .brandTabs span em { font-style: normal; color: #666; }
+
+.newBrands { float: right; width: 200px; border: 1px solid #eee; }
+
+.newBrands .title { height: 40px; line-height: 40px; background-color: #72b1e4; color: #fff; clear: both; overflow: hidden; font-size: 16px; }
+
+.newBrands .title span { width: 80%; display: block; float: left; text-align: center; }
+
+.newBrands .title em { width: 20%; display: block; float: left; text-align: center; background-color: #f60; font-style: normal; }
+
+.newBrands .smBrandList { clear: both; }
+
+.newBrands .smBrandList li { clear: both; overflow: hidden; font-size: 14px; height: 30px; line-height: 30px; }
+
+.newBrands .smBrandList li a { float: left; width: 80%; color: #999; }
+
+.newBrands .smBrandList li a:hover { color: #72b1e4; }
+
+.newBrands .smBrandList li a em { font-size: 12px; display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; font-style: normal; color: #fff; background-color: #888888; margin: 0px 5px; }
+
+.newBrands .smBrandList li a em.be { background-color: #72b1e4; }
+
+.newBrands .smBrandList li span { float: left; width: 20%; text-align: center; color: #f60; }
+
 /*卖家网站 end*/
 /*管理端界面 start*/
 .a_header { height: 70px; position: relative; background-image: url("../images/common/ahead.jpg"); background-repeat: no-repeat; background-size: 100% 100%; }
