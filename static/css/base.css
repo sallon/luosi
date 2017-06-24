@@ -927,10 +927,108 @@ ul { margin: 0px; padding: 0px; list-style: none; }
 
 .productTable .productTableList td:first-child { background-color: #f8f8f8; }
 
+.productTable .productTableList td.red { background-color: #f00; }
+
+.productTable .productTableList td.blue { background-color: #1c82bc; }
+
 .productTable .price_tip { border: 1px solid #f60; margin: 30px 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10px; font-size: 20px; color: #999; line-height: 2; }
 
 .productTable .price_tip em { font-style: normal; margin: 0 20px; color: #f60; }
 
 .productTable .price_tip .text-right { text-align: right; }
+
+.a_content .ac_content .cc_chooseClass { margin-right: -10px; clear: both; overflow: hidden; }
+
+.a_content .ac_content .cc_chooseClass .c_item { width: 180px; height: 180px; float: left; }
+
+.a_content .ac_content .cc_chooseClass .c_item .imgBox { width: 180px; height: 150px; display: table-cell; vertical-align: middle; text-align: center; }
+
+.a_content .ac_content .cc_chooseClass .c_item .imgBox img { height: 80px; }
+
+.a_content .ac_content .cc_chooseClass .c_item .name { font-size: 20px; line-height: 30px; }
+
+.ct_firstTable { border: 1px solid #eee; width: 100%; border-collapse: collapse; }
+
+.ct_firstTable th { border: 1px solid #eee; height: 40px; background-color: #72b1e4; font-size: 16px; color: #fff; }
+
+.ct_firstTable th:first-child { width: 60px; }
+
+.ct_firstTable td { border: 1px solid #eee; padding: 0px; }
+
+.ct_firstTable td.bigLei { font-size: 20px; text-align: center; }
+
+.ct_firstTable td.bigLei span { display: block; font-size: 14px; }
+
+.ct_firstTable td .childTable { border-collapse: collapse; margin: -1px; width: 100%; text-align: center; }
+
+.ct_firstTable td .childTable td { width: 151px; height: 105px; }
+
+.ct_firstTable td .childTable td img { height: 75px; }
+
+.ct_firstTable td .childTable td p { font-size: 16px; line-height: 30px; height: 30px; }
+
+.ct_firstTable td .childTable td.red { background-color: #f00; }
+
+.ct_firstTable td .childTable td.blue { background-color: #1c82bc; }
+
+.a_container { padding: 10px; clear: both; overflow: hidden; }
+
+.a_container .a_advShow { border: 1px solid #eee; padding: 10px; font-size: 16px; line-height: 2; text-indent: 2em; margin-bottom: 20px; }
+
+.a_container .a_advItem { border: 1px solid #eee; margin-bottom: 10px; clear: both; overflow: hidden; padding: 10px; }
+
+.a_container .a_advItem .ImgShow { float: left; width: 500px; }
+
+.a_container .a_advItem .ImgShow img { width: 500px; }
+
+.a_container .a_advItem .advText { float: left; width: 454px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 20px; }
+
+.a_container .a_advItem .advText .title { font-size: 24px; color: #f60; }
+
+.a_container .a_advItem .advText .info { font-size: 18px; line-height: 2; color: #666; }
+
+.a_container .a_advItem .advText .btnBox { clear: both; overflow: hidden; text-align: center; }
+
+.a_container .a_advItem .advText .btnBox .btn { background-color: #f60; cursor: pointer; }
+
+.a_container .a_advItem .advText .btnBox .btn:hover { background-color: #f90; }
+
+.xunjiaList { width: 100%; border: 1px solid #eee; border-collapse: collapse; }
+
+.xunjiaList tr:nth-child(2n-1) { background-color: #f8f8f8; }
+
+.xunjiaList th { height: 40px; line-height: 40px; font-size: 16px; color: #fff; background-color: #72b1e4; border: 1px solid #eee; }
+
+.xunjiaList td { font-size: 14px; height: 30px; border: 1px solid #eee; text-align: center; }
+
+.xunjiaList td a { color: #72b1e4; }
+
+.xunjiaList td a:hover { color: #f60; }
+
+.xunjiaList td:first-child { background-color: #f8f8f8; }
+
+.leftRightBox { clear: both; overflow: hidden; }
+
+.leftRightBox .left { float: left; width: 600px; }
+
+.leftRightBox .right { float: left; width: 376px; }
+
+.leftRightBox .right .a_pImg { width: 260px; margin: 0 auto; height: 260px; border: 1px solid #eee; }
+
+.leftRightBox .right .a_pImg img { width: 100%; }
+
+.leftRightBox .right .imgName { height: 40px; border: 1px solid #f60; width: 260px; margin: 20px  auto; line-height: 40px; font-size: 18px; color: #f60; text-align: center; }
+
+.a_comInfo { line-height: 40px; padding-left: 100px; }
+
+.a_comInfo span { float: left; width: 80px; font-size: 16px; }
+
+.a_comInfo input { height: 30px; line-height: 30px; border: 1px solid #eee; padding: 0px 10px; outline: none; width: 350px; }
+
+.a_comInfo textarea { width: 350px; padding: 10px; border: 1px solid #eee; outline: none; resize: none; height: 150px; }
+
+.a_comInfo:after { content: ""; clear: both; overflow: hidden; }
+
+hr { height: 1px; border: none; background-color: #ddd; }
 
 /*管理端界面 end*/

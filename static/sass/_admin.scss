@@ -788,6 +788,12 @@
             &:first-child{
                 background-color: #f8f8f8;
             }
+            &.red{
+                background-color: #f00;
+            }
+            &.blue{
+                background-color: #1c82bc;
+            }
         }
     }
     .price_tip{
@@ -808,4 +814,232 @@
         }
     }
 
+}
+.a_content .ac_content .cc_chooseClass{
+    margin-right: -10px;
+    clear: both;
+    overflow: hidden;
+    .c_item{
+        width: 180px;
+        height: 180px;
+        float: left;
+        .imgBox{
+            width: 180px;
+            height: 150px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            img{
+                height: 80px;
+                //width: 160px;
+            }
+        }
+        .name{
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+.ct_firstTable{
+    border: 1px solid #eee;
+    width: 100%;
+    border-collapse: collapse;
+    th{
+        border: 1px solid #eee;
+        height: 40px;
+        background-color:$baseColor;
+        font-size: 16px;
+        color: #fff;
+        &:first-child{
+            width: 60px;
+        }
+    }
+    td{
+        border: 1px solid #eee;
+        padding: 0px;
+        &.bigLei{
+            font-size: 20px;
+            text-align: center;
+            span{
+                display: block;
+                font-size: 14px;
+            }
+        }
+        .childTable{
+            border-collapse: collapse;
+            margin: -1px;
+            width: 100%;
+            text-align: center;
+            td{
+                width: 151px;
+                height: 105px;
+                img{
+                    height: 75px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 30px;
+                    height: 30px;
+                }
+                &.red{
+                    background-color: #f00;
+                }
+                &.blue{
+                    background-color: #1c82bc;
+                }
+            }
+        }
+    }
+}
+.a_container{
+    padding: 10px;
+    clear: both;
+    overflow: hidden;
+    .a_advShow{
+        border: 1px solid #eee;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 2;
+        text-indent: 2em;
+        margin-bottom: 20px;
+    }
+    .a_advItem{
+        border: 1px solid #eee;
+        margin-bottom: 10px;
+        clear: both;
+        overflow: hidden;
+        padding: 10px;
+        .ImgShow{
+            float: left;
+            width: 500px;
+            img{
+                width: 500px;
+            }
+        }
+        .advText{
+            float: left;
+            width: 454px;
+            box-sizing: border-box;
+            padding-left: 20px;
+            .title{
+                font-size: 24px;
+                color: $orange;
+            }
+            .info{
+                font-size: 18px;
+                line-height: 2;
+                color: #666;
+            }
+            .btnBox{
+                clear: both;
+                overflow: hidden;
+                text-align: center;
+                .btn{
+                    background-color: $orange;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #f90;
+                    }
+                }
+            }
+        }
+    }
+}
+.xunjiaList{
+    width: 100%;
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    tr:nth-child(2n-1){
+        background-color: #f8f8f8;
+    }
+    th{
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        color: #fff;
+        background-color: $baseColor;
+        border: 1px solid #eee;
+    }
+    td{
+        font-size: 14px;
+        height: 30px;
+        border: 1px solid #eee;
+        text-align: center;
+        a{
+            color: $baseColor;
+            &:hover{
+                color: $orange;
+            }
+        }
+        &:first-child{
+            background-color: #f8f8f8;
+        }
+    }
+}
+.leftRightBox{
+    clear: both;
+    overflow: hidden;
+    .left{
+        float: left;
+        width: 600px;
+    }
+    .right{
+        float: left;
+        width: 376px;
+        .a_pImg{
+            width: 260px;
+            margin: 0 auto;
+            height: 260px;
+            border: 1px solid #eee;
+            img{
+                width: 100%;
+            }
+        }
+        .imgName{
+            height: 40px;
+            border: 1px solid $orange;
+            width: 260px;
+            margin: 20px  auto;
+            line-height: 40px;
+            font-size: 18px;
+            color: $orange;
+            text-align: center;
+        }
+    }
+}
+.a_comInfo{
+    //height: 40px;
+    line-height: 40px;
+    padding-left: 100px;
+    span{
+        float: left;
+        width: 80px;
+        font-size: 16px;
+    }
+    input{
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #eee;
+        padding: 0px 10px;
+        outline: none;
+        width: 350px;
+    }
+    textarea{
+        width: 350px;
+        padding: 10px;
+        border: 1px solid #eee;
+        outline: none;
+        resize: none;
+        height: 150px;
+    }
+    &:after{
+        content: "";
+        clear: both;
+        overflow: hidden;
+    }
+}
+hr{
+    height: 1px;
+    border: none;
+    background-color: #ddd;
 }
